@@ -34,9 +34,9 @@ ActiveRecord::Schema.define(version: 20150216143203) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "firstname"
-    t.string   "lastname"
-    t.date     "birthday"
+    t.string   "firstname", default: "", null: false
+    t.string   "lastname",  default: "", null: false
+    t.date     "birthday",  null: false
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "email",                  default: "", null: false
