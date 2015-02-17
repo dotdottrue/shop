@@ -1,5 +1,8 @@
-Rails.application.routes.draw do
-  devise_for :users
+ Rails.application.routes.draw do
+      devise_for :users, controllers: {
+        sessions: 'sessions'
+      }
+
   resources :products
   
   get ':category_id', to: 'products#index', as: 'category_products'
