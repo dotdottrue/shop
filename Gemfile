@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+<<<<<<< HEAD
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -42,12 +43,39 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'better_errors'
+=======
+ruby '2.1.2'
+gem 'rails', '4.2.0'
+gem 'sass-rails', '~> 5.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 2.0'
+
+gem 'sqlite3'
+gem 'twitter-bootstrap-rails'
+gem 'less-rails'
+gem 'therubyracer'
+
+gem 'devise'
+gem 'devise-bootstrap-views'
+
+group :development do
+  gem 'better_errors'
+end
+
+gem 'sdoc', '~> 0.4.0', group: :doc
+
+group :development, :test do
+>>>>>>> devise
   gem 'binding_of_caller'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'guard-rspec'
   gem 'faker'
   gem 'capybara'
+<<<<<<< HEAD
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -55,6 +83,12 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+=======
+  gem 'byebug'
+
+  gem 'web-console', '~> 2.0'
+
+>>>>>>> devise
   gem 'spring'
 end
 

@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
     @products = if params[:category_id]
                   Category.find(params[:category_id]).products
                 else
-                  Product.all
+                    Product.all
                 end
   end
 
@@ -73,6 +73,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :image, :price, category_ids: [] )
+      params.require(:product).permit(:name, :description, :image, :price, category_ids: [])
     end
 end

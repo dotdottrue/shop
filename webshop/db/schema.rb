@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150216143203) do
+=======
+ActiveRecord::Schema.define(version: 20150216175630) do
+>>>>>>> devise
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -20,10 +24,22 @@ ActiveRecord::Schema.define(version: 20150216143203) do
   end
 
   create_table "product_categories", force: :cascade do |t|
+<<<<<<< HEAD
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+=======
+    t.integer  "product_id"
+    t.integer  "category_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "product_categories", ["category_id"], name: "index_product_categories_on_category_id"
+  add_index "product_categories", ["product_id"], name: "index_product_categories_on_product_id"
+
+>>>>>>> devise
   create_table "products", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
@@ -34,11 +50,14 @@ ActiveRecord::Schema.define(version: 20150216143203) do
   end
 
   create_table "users", force: :cascade do |t|
+<<<<<<< HEAD
     t.string   "firstname", default: "", null: false
     t.string   "lastname",  default: "", null: false
     t.date     "birthday",  null: false
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+=======
+>>>>>>> devise
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -49,6 +68,12 @@ ActiveRecord::Schema.define(version: 20150216143203) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+<<<<<<< HEAD
+=======
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+>>>>>>> devise
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

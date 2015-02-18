@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 Rails.application.routes.draw do
   devise_for :users
   resources :users
+=======
+ Rails.application.routes.draw do
+  devise_for :users
+>>>>>>> devise
 
   resources :products
+  
+  get ':category_id', to: 'products#index', as: 'category_products'
+
+  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
