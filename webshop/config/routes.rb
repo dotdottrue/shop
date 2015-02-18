@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :carts
 
+
   resources :products
   
   get ':category_id', to: 'products#index', as: 'category_products'

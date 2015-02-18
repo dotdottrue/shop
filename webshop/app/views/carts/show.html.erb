@@ -4,12 +4,19 @@
 <table>
   <% @cart.line_items.each do |item| %>
   <tr>
-    <td><%= item.quantity %> </td>
+    <td rowspan="3"><%= image_tag item.product.image,width:"200"%></td>
     <td><%= item.product.name %></td>
+    <td>Menge</td>
+    <td><%= item.quantity %> </td>
+  </tr>
+      <tr>
+        <td></td>
+        <td>Preis</td>
     <td><%= number_to_currency(item.total_price) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
-  </tr>
+
 
   <tr>
     <td colspan="2">Gesamt</td>
