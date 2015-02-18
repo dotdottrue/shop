@@ -3,14 +3,12 @@
   <%= @product.name %>
 </p>
 
+<p><strong>Image:</strong></p>
+<p><%= image_tag @product.avatar.url(:medium) %></p>
+
 <p>
   <strong>Description:</strong>
   <%= @product.description %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @product.image %>
 </p>
 
 <p>
