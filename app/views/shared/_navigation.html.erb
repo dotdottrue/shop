@@ -5,19 +5,12 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-<<<<<<< HEAD
-    <a class="navbar-brand" href="#">Webshop</a>
-    <div class="nav navbar-nav">
-      <ul class="nav navbar-nav">
-        <% Category.all.each do |category|  %>
-          <li><%= link_to category.name, category_products_path(category)  %></li>
-=======
+
     <a class="navbar-brand" href="#">dotDotTrue</a>
     <div class="nav navbar-nav">
       <ul class="nav navbar-nav">
         <% Category.all.each do |category|  %>
           <li><%= link_to category.name, products_path(category)  %></li>
->>>>>>> devise
         <% end %>
        </ul>
     </div>
