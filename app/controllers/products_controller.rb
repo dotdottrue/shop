@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-
+  before_filter :authenticate_user! , only: [:edit, :update, :destroy, :new, :create]
+  before_filter :is_admin? , only: [:edit, :update, :destroy, :new, :create]
   # GET /products
   # GET /products.json
   def index
@@ -15,6 +16,16 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
   end
+
+
+    def is_admin?
+      if current_user.admin?
+        true
+      else
+        redirect_to :products, alert: 'Sorry, you have to be an admin to do this!'
+      end
+    end
+
 
   # GET /products/new
   def new
