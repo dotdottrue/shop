@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20150218091033) do
-=======
 ActiveRecord::Schema.define(version: 20150218091227) do
->>>>>>> devise
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -55,10 +51,7 @@ ActiveRecord::Schema.define(version: 20150218091227) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-<<<<<<< HEAD
-=======
     t.string   "name"
->>>>>>> devise
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

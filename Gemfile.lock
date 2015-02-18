@@ -255,11 +255,7 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.1.0)
-<<<<<<< HEAD
-  devise (~> 3.4.0)
-=======
   devise
->>>>>>> devise
   devise-bootstrap-views
   factory_girl_rails
   faker
