@@ -14,6 +14,8 @@ gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'therubyracer'
 
+gem 'paperclip'
+
 gem 'devise'
 gem 'devise-bootstrap-views'
 
