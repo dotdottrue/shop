@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :admins
+
   devise_for :users
+  
   resources :products
 
   get ':category_id', to: 'products#index', as: 'category_products'
