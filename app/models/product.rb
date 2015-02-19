@@ -8,7 +8,7 @@ class Product < ActiveRecord::Base
 
   validates :name, :description, :price, presence: true
 
-  private
+private
   def ensure_not_referenced_by_any_line_item
     if line_items.empty?
       return true

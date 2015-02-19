@@ -46,9 +46,9 @@ ActiveRecord::Schema.define(version: 20150218125214) do
     t.string   "name"
     t.text     "description"
     t.string   "image"
-    t.decimal  "price"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.decimal  "price",       default: 0.0
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
 end
