@@ -11,9 +11,9 @@ class CartsController < ApplicationController
   # GET /carts/1.json
   def show
     begin
-      @cart = Cart.find(params[:id])
+      @cart = Cart.find(session[:cart_id])
     rescue ActiveRecord::RecordNotFound
-      logger.error "Attempt to access invalid cart #{params[:id]}"
+      logger.error "Attempt to access invalid cart #{session[:cart_id]}"
       redirect_to store_url, :notice => 'Falscher Warenkorb'
     else
       respond_to do |format|
@@ -78,11 +78,9 @@ class CartsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_cart
-      if id.nil?
-        create
-      else
-        @cart = Cart.find(params[:id])
-      end
+
+      @cart = Cart.find(params[:id])
+
 
     end
 

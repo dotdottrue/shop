@@ -3,11 +3,14 @@ class Cart < ActiveRecord::Base
   def add_product(product_id)
     current_item = line_items.find_by_product_id(product_id)
     if current_item
-      if current_item.quantity.nil?
-        current_item.quantity = 1
+      tmp_quantity = current_item.quantity
+      if tmp_quantity.nil?
+        tmp_quantity = 1
       else
-        current_item.quantity += 1
+        tmp_quantity += 1
       end
+      current_item.quantity = tmp_quantity
+
 
     else
       current_item = line_items.build(:product_id => product_id)
