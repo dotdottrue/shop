@@ -1,10 +1,9 @@
+<p id="notice"><%= notice %></p>
+
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
 </p>
-
-<p><strong>Image:</strong></p>
-<p><%= image_tag @product.avatar.url(:medium) %></p>
 
 <p>
   <strong>Description:</strong>
@@ -12,15 +11,14 @@
 </p>
 
 <p>
+  <strong>Image:</strong>
+  <%= @product.image %>
+</p>
+
+<p>
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
 
-<% if user_signed_in? %>
-  <% if current_user.admin? %>
-    <%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-default btn-xs' %>
-    | <%= link_to 'Back', products_path, class: 'btn btn-default btn-xs' %>
-  <% end %> 
-  <% else %>
-  <%= link_to 'Back', products_path, class: 'btn btn-default btn-xs' %>
-<% end %>
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
