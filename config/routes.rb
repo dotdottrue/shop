@@ -1,13 +1,11 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD:config/routes.rb
+
   resources :line_items
 
   resources :carts
 
-
-=======
   devise_for :users
->>>>>>> master:config/routes.rb
+
   resources :products
 
   get ':category_id', to: 'products#index', as: 'category_products'

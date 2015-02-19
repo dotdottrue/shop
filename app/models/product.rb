@@ -1,5 +1,4 @@
 class Product < ActiveRecord::Base
-<<<<<<< HEAD
   #default_scope :order => 'name'
   has_many :line_items
   has_many :categories, through: :product_categories
