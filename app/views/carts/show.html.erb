@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<h2>Dein Warenkorb</h2>
+
+<table>
+  <% @cart.line_items.each do |item| %>
+  <tr>
+    <td rowspan="3"><%= image_tag item.product.avatar.url(:mini) %></td>
+    <td>Name: <%= item.product.name %></td>
+  </tr>
+  <tr>
+    <td>Menge: <%= item.quantity %></td>
+  </tr>
+  <tr>
+    <td>Preis: <%= number_to_currency(item.total_price) %></td>
+        <td><%= link_to 'Item Löschen', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+
+  <tr>
+    <td colspan="2">Gesamt</td>
+    <td><%= number_to_currency(@cart.total_price) %></td>
+
+  </tr>
+
+</table>
+
+<%= button_to 'Warenkorb leeren', @cart, :method => :delete, :confirm => "Bist du dir Sicher?" %>
