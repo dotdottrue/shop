@@ -1,23 +1,18 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD:config/routes.rb
+
   resources :line_items
 
   resources :carts
 
-
-=======
   devise_for :users
->>>>>>> master:config/routes.rb
+
   resources :products
 
   get ':category_id', to: 'products#index', as: 'category_products'
 
   resources :users
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
+  get 'accountinformations/show'
   root 'products#index'
 
   #Definition der Variable store, um bei Controllern auf diese verweisen zu können, z.B. Einkaufswagen gelöscht wird

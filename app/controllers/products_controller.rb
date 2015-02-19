@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     @products = if params[:category_id]
                   Category.find(params[:category_id]).products
                 else
-                    Product.all
+                  Product.all
                 end
   end
 
@@ -18,13 +18,13 @@ class ProductsController < ApplicationController
   end
 
 
-    def is_admin?
-      if current_user.admin?
-        true
-      else
-        redirect_to :products, alert: 'Sorry, you have to be an admin to do this!'
-      end
+  def is_admin?
+    if current_user.admin?
+      true
+    else
+      redirect_to :products, alert: 'Sorry, you have to be an admin to do this!'
     end
+  end
 
 
   # GET /products/new
