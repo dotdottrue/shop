@@ -1,6 +1,4 @@
 class CombineItemsInCart < ActiveRecord::Migration
-  def change
-  end
   def self.up
     Cart.all.each do |cart|
       sums = cart.line_items.group(:product_id).sum(:quantity)
