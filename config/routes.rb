@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   resources :users
 
-  get 'accountinfos/show'
+  get 'accountinformations/show'
   root 'products#index'
 
   #Definition der Variable store, um bei Controllern auf diese verweisen zu können, z.B. Einkaufswagen gelöscht wird

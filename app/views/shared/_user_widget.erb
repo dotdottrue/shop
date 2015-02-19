@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
 
     <%= link_to 'Logged In [click to logout]', destroy_user_session_path, :method => :delete %>
-    <%= link_to 'Account', accountinfos_show_path %>
+    <%= link_to 'Account', accountinformations_show_path %>
 
 <% else %>
 
