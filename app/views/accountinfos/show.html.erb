@@ -1,0 +1,13 @@
+<h1>Accounteinstellungen</h1>
+
+
+        Account: <%= @user.email %>
+  <br>  Name: <%= @user.name %>
+  <br>  Vorname: <%= @user.firstname %>
+  <br>  Strasse: <%= @user.street %>
+  <br>  PLZ: <%= @user.zipcode %>
+  <br>  Telefon: <%= @user.telephone %>
+  <br>  Geburtstag: <%= @user.birth %>
+  <br>  Company: <%= @user.company %>
+  <br><br>  <%= link_to 'Edit', edit_user_registration_path%>
+<hr>

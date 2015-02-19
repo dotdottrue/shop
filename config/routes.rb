@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'accountinfos/show'
+
   devise_for :users
   resources :products
 
