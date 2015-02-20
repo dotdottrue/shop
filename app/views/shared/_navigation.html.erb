@@ -17,7 +17,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          <% if user_signed_in? %> Welcome <%= current_user.email %> <% else %> You are not signed in. <%end%>
+          <% if user_signed_in? %> Willkommen, <%= current_user.email %>!<% else %> Sie sind nicht eingeloggt. <%end%>
           <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><%= render 'shared/user_widget' %></li>
