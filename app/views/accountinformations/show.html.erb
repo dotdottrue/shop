@@ -1,17 +1,26 @@
 <h1>Benutzerübersicht</h1>
 
+
+<div class="col-xs-2"></div>
+<div class="col-xs-9">
+
+<table class="table table-striped">
   <% if current_user.admin? %>
-        Account: <%= @user.email %>
-  <br>  Name: <%= @user.name %>
+      <tr><th>Account: </th><td><%= @user.email %></td></tr>
+      <tr><th>Name: </th><td><%= @user.name %></td></tr>
   <% else %>
-        Account: <%= @user.email %>
-  <br>  Name: <%= @user.name %>
-  <br>  Vorname: <%= @user.firstname %>
-  <br>  Strasse: <%= @user.street %>
-  <br>  PLZ: <%= @user.zipcode %>
-  <br>  Telefon: <%= @user.telephone %>
-  <br>  Geburtstag: <%= @user.birth %>
-  <br>  Company: <%= @user.company %>
-  <br><br>  <%= link_to 'Edit', edit_user_registration_path%>
+      <tr><th>Account:</th><td><%= @user.email %></td></tr>
+      <tr><th>Name:</th><td><%= @user.name %></td></tr>
+      <tr><th>Vorname:</th><td><%= @user.firstname %></td></tr>
+      <tr><th>Strasse:</th><td><%= @user.street %></td></tr>
+      <tr><th>PLZ:</th><td> <%= @user.zipcode %></td></tr>
+      <tr><th>Telefon:</th><td> <%= @user.telephone %></td></tr>
+      <tr><th>Geburtstag:</th><td> <%= @user.birth %></td></tr>
+      <tr><th>Company: </th><td><%= @user.company %></td></tr>
+</table>
+
+      <%= link_to 'Edit', edit_user_registration_path, class: 'btn btn-default' %>
   <% end %>
-<hr>
+
+</div>
+
