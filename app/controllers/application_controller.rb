@@ -11,6 +11,8 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:name, :firstname, :street, :zipcode, :email, :password, :current_password) }
   end
 
+
+
   def current_cart
       Cart.find(session[:cart_id])
   rescue ActiveRecord::RecordNotFound
