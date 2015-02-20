@@ -3,7 +3,11 @@
 
 <div class="col-xs-2"></div>
 <div class="col-xs-9">
-
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><%= link_to 'Anzeigen', accountinformations_show_path %></li>
+  <li><%= link_to 'Bearbeiten', edit_user_registration_path%></li>
+</ul>
+  <br>
 <table class="table table-striped">
   <% if current_user.admin? %>
       <tr><th>Account: </th><td><%= @user.email %></td></tr>
@@ -19,7 +23,7 @@
       <tr><th>Company: </th><td><%= @user.company %></td></tr>
 </table>
 
-      <%= link_to 'Edit', edit_user_registration_path, class: 'btn btn-default' %>
+
   <% end %>
 
 </div>
