@@ -1,26 +1,22 @@
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<h1><%= @product.name %></h1>
 
-<p><strong>Image:</strong></p>
-<p><%= image_tag @product.avatar.url(:medium) %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+<div class="col-xs-5">
+  <%= image_tag @product.avatar.url(:medium) %>
+  <h2><%= @product.price %> Euro</h2>
+</div>
+<div class="col-xs-7">
+<table class="table">
+  <tr><th>Beschreibung</th></tr>
+  <tr><td><%= @product.description %></td></tr>
+  <tr><td>
+    <%= link_to 'Zurück', products_path, class: 'btn btn-default btn-xs' %>
+    <% if user_signed_in? %>
+        <% if current_user.admin? %>
+            <%= link_to 'Bearbeiten', edit_product_path(@product), class: 'btn btn-default btn-xs' %>
+        <% end %>
+    <% end %>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
-<% if user_signed_in? %>
-  <% if current_user.admin? %>
-    <%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-default btn-xs' %>
-    | <%= link_to 'Back', products_path, class: 'btn btn-default btn-xs' %>
-  <% end %> 
-  <% else %>
-  <%= link_to 'Back', products_path, class: 'btn btn-default btn-xs' %>
-<% end %>
+  </td></tr>
+</table>
+</div>
