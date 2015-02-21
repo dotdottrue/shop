@@ -1,27 +1,60 @@
 <p id="notice"><%= notice %></p>
-<h2>Dein Warenkorb</h2>
 
-<table>
-  <% @cart.line_items.each do |item| %>
+<h1>Dein Warenkorb</h1>
+
+<table class="table">
+  <thead>
   <tr>
-    <td rowspan="3"><%= image_tag item.product.avatar.url(:mini) %></td>
-    <td>Name: <%= item.product.name %></td>
+    <th>Abbildung</th>
+    <th>Produkt</th>
+    <th>Menge</th>
+    <th>Preis</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% if @cart.line_items.present? %>
+
+    <% @cart.line_items.each do |item| %>
+      <tr>
+        <td><%= image_tag item.product.avatar.url(:small) %></td>
+        <td><%= item.product.name %></td>
+        <td><%= item.quantity %></td>
+        <td><%= number_to_currency(item.total_price) %></td>
+        <td><%= link_to 'Produkt entfernen', item, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default btn-xs' %>
+
+      </tr>
+    <% end %>
+  <tr>
+    <td></td>
+    <td></td>
+
+    <th>Gesamt</th>
+    <th><%= number_to_currency(@cart.total_price) %></th>
+    <td></td>
   </tr>
   <tr>
-    <td>Menge: <%= item.quantity %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <% if @cart.line_items.present? %>
+        <td>
+          <%= button_to 'Warenkorb leeren', @cart, :method => :delete, :confirm => "Bist du dir Sicher?", class: 'btn btn-default btn-xs' %>
+        </td>
+        <td>
+          <%= button_to 'Bestellen via Vorkasse', @cart, :method => :delete, :confirm => "Bist du dir Sicher?", class: 'btn btn-default btn-xs' %>
+        </td>
+    <% else %>
+        <td></td>
+        <td></td>
+    <% end %>
   </tr>
-  <tr>
-    <td>Preis: <%= number_to_currency(item.total_price) %></td>
-        <td><%= link_to 'Item Löschen', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <%else%>
+    <tr>
+      <td>Dein Warenkorb ist leer!</td>
     </tr>
   <% end %>
-
-  <tr>
-    <td colspan="2">Gesamt</td>
-    <td><%= number_to_currency(@cart.total_price) %></td>
-
-  </tr>
-
+  </tbody>
 </table>
 
-<%= button_to 'Warenkorb leeren', @cart, :method => :delete, :confirm => "Bist du dir Sicher?" %>
