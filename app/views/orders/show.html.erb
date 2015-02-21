@@ -1,9 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Deine Bestellung</h1>
+<h1>Vielen Dank für Ihre Bestellung!</h1>
 
-<p>Vielen Dank für Ihre Bestellung!</p>
-<p>Ihre Bestellnummer lautet: <%= @order.order_number %>. Der zu Zahlende Betrag ist 
+<p>Ihre Bestellnummer lautet: <b><%= @order.order_number %></b>. Der zu Zahlende Betrag ist
   <%= number_to_currency(@order.total_price, :unit=>'€', separator:",", format:"%n%u") %>.</p>
 <p>Bitte geben Sie die Bestellnummer als Verwendungszweck bei deiner Überweisung an, damit wir Ihre Zahlung zuordnen können.</p>
 <p> Unsere Kontodaten lauten: Sparkasse Münschterland Nord, IBAN DE87340014513452345</p>
@@ -49,5 +48,4 @@
 
 
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+

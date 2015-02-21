@@ -32,16 +32,13 @@ class OrdersController < ApplicationController
     @order.order_date=Time.now
 
 
-    tmp = 123456
-    tmp2 = Order.last
-    tmp_order = tmp2.order_number
-
-    if tmp_order.nil?
-       @order.order_number = tmp
-    else
-      tmp = tmp + tmp2.order_number
+    tmp = 100000
+    if Order.last.nil?
       @order.order_number = tmp
+    else
+      @order.order_number = Order.last.order_number + 1
     end
+
 
     @Cart.destroy
     
