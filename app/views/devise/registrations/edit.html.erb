@@ -1,11 +1,47 @@
+<h1>Benutzerübersicht</h1>
+
+<div class="col-xs-2"></div>
+<div class="col-xs-10">
+
+  <ul class="nav nav-tabs" role="tablist">
+    <li><%= link_to 'Anzeigen', accountinformations_show_path %></li>
+    <li class="active"><%= link_to 'Bearbeiten', edit_user_registration_path%></li>
+  </ul>
+  <br>
 <div class="authform">
-  <h3>Edit <%= resource_name.to_s.humanize %></h3>
   <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :role => 'form'}) do |f| %>
     <%= devise_error_messages! %>
     <div class="form-group">
-      <%= f.label :name %>
-      <%= f.text_field :name, :autofocus => true, class: 'form-control' %>
+      <%= f.label :nachname %>
+      <%= f.text_field :lastname, :autofocus => true, class: 'form-control' %>
     </div>
+      <div class="form-group">
+        <%= f.label :vorname %>
+        <%= f.text_field :firstname, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :straße %>
+        <%= f.text_field :street, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :postleitzahl %>
+        <%= f.text_field :zipcode, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :telefonnummer %>
+        <%= f.text_field :telephone, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :geburtsdatum %>
+        <%= f.date_select :birth, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :firma %>
+        <%= f.text_field :company, class: 'form-control' %>
+      </div>
+
+    <hr>
     <div class="form-group">
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
@@ -16,18 +52,18 @@
     <fieldset>
       <p>Leave these fields blank if you don't want to change your password.</p>
       <div class="form-group">
-        <%= f.label :password %>
+        <%= f.label :passwort %>
         <%= f.password_field :password, :autocomplete => 'off', class: 'form-control' %>
       </div>
       <div class="form-group">
-        <%= f.label :password_confirmation %>
+        <%= f.label :passwort_bestätigen %>
         <%= f.password_field :password_confirmation, class: 'form-control' %>
       </div>
     </fieldset>
     <fieldset>
       <p>You must enter your current password to make changes.</p>
       <div class="form-group">
-        <%= f.label :current_password %>
+        <%= f.label :aktuelles_passwort %>
         <%= f.password_field :current_password, class: 'form-control' %>
       </div>
     </fieldset>
@@ -35,7 +71,8 @@
   <% end %>
 </div>
 <div class="authform">
-<h3>Cancel Account</h3>
-<p>Unhappy? We'll be sad to see you go.</p>
-<%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button right' %>
+<h3>Benutzerkonto löschen?</h3>
+<p>Unzufrieden? Wir sind traurig dies zu hören.</p>
+<%= button_to "Benutzer löschen", registration_path(resource_name), :data => { :confirm => "Sind sie sich sicher?" }, :method => :delete, :class => 'button right' %>
+</div>
 </div>

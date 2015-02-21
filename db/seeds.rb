@@ -10,5 +10,5 @@ Category.create(name: 'Software')
 Category.create(name: 'Hardware')
 Category.create(name: 'Kleidung')
 
-user = Admin.create(email: 'admin@example.de', password: '12345678', admin: 'true')
-puts user.present?
+User.create(email: 'admin@dotdottrue.com', password: 'admin678', name: 'Administrator', admin: 'true')
+
