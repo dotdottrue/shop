@@ -10,5 +10,5 @@ Category.create(name: 'Software')
 Category.create(name: 'Hardware')
 Category.create(name: 'Kleidung')
 
-User.create(email: 'admin@dotdottrue.com', password: 'admin678', name: 'Administrator', admin: 'true')
+User.create(email: 'admin@dotdottrue.com', password: 'admin678', lastname: 'Administrator', admin: 'true')
 
