@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Deine Bestellung</h1>
+
+<p>Vielen Dank für Ihre Bestellung!</p>
+<p>Ihre Bestellnummer lautet: <%= @order.order_number %>. Der zu Zahlende Betrag ist 
+  <%= number_to_currency(@order.total_price, :unit=>'€', separator:",", format:"%n%u") %>.</p>
+<p>Bitte geben Sie die Bestellnummer als Verwendungszweck bei deiner Überweisung an, damit wir Ihre Zahlung zuordnen können.</p>
+<p> Unsere Kontodaten lauten: Sparkasse Münschterland Nord, IBAN DE87340014513452345</p>
+
+<!-- <table class="table">
+  <thead>
+  <tr>
+    <th>Bestellnummer</th>
+    <th>Benutzerid</th>
+    <th>Gesamtpreis</th>
+    <th>Bestelldatum</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+
+  <tbody>
+ 	<tr>
+ 		<td>
+ 			<%= @order.order_number %>
+ 		</td>
+ 		<td>
+ 			<%= @order.user_id %>
+ 		</td>
+ 		<td>
+ 			<%= @order.total_price %>
+ 		</td>
+ 		<td>
+ 			<%= @order.order_date %>
+ 		</td>
+ 	</tr>
+  </tbody>
+</table> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
