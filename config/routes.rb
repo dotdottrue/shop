@@ -10,12 +10,12 @@ Rails.application.routes.draw do
 
   resources :products
 
-  get ':category_id', to: 'products#index', as: 'category_products'
-
   resources :users
 
-  get 'accountinformations/show'
+  get ':category_id', to: 'products#index', as: 'category_products'
   root 'products#index'
+
+  get 'accountinformations/show'
 
   #Definition der Variable store, um bei Controllern auf diese verweisen zu können, z.B. Einkaufswagen gelöscht wird
   root to: 'products#index', as: 'store'
