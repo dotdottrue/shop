@@ -43,7 +43,7 @@
           <%= button_to 'Warenkorb leeren', @cart, :method => :delete, :confirm => "Bist du dir Sicher?", class: 'btn btn-default btn-xs' %>
         </td>
         <td>
-          <%= button_to 'Bestellen via Vorkasse', @cart, :method => :delete, :confirm => "Bist du dir Sicher?", class: 'btn btn-default btn-xs' %>
+          <%= button_to 'Bestellen via Vorkasse', orders_path, class: 'btn btn-default btn-xs' %>
         </td>
     <% else %>
         <td></td>
