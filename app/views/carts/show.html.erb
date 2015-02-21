@@ -22,7 +22,7 @@
         <td><%= item.product.name %></td>
         <td><%= item.quantity %></td>
         <td><%= number_to_currency(item.total_price) %></td>
-        <td><%= link_to 'Produkt entfernen', item, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default btn-xs' %>
+        <td><%= link_to 'Produkt entfernen', item, method: :delete, data: { confirm: 'Produkt wirklich entfernen?' }, class: 'btn btn-default btn-xs' %>
 
       </tr>
     <% end %>
@@ -40,10 +40,14 @@
     <td></td>
     <% if @cart.line_items.present? %>
         <td>
-          <%= button_to 'Warenkorb leeren', @cart, :method => :delete, :confirm => "Bist du dir Sicher?", class: 'btn btn-default btn-xs' %>
+          <%= button_to 'Warenkorb leeren', @cart, :method => :delete, :confirm => "Sind Sie Sicher?", class: 'btn btn-default btn-xs' %>
         </td>
         <td>
+          <% if user_signed_in? %> 
           <%= button_to 'Bestellen via Vorkasse', orders_path, class: 'btn btn-default btn-xs' %>
+          <% else %>
+          <%= button_to 'Bitte melden Sie sich an', new_user_session_path, class: 'btn btn-default btn-xs' %>
+          <%end%>
         </td>
     <% else %>
         <td></td>

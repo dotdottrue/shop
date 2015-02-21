@@ -17,7 +17,7 @@
         <td><%= image_tag product.avatar.url(:small) %></td>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
-        <td><%= product.price %></td>
+        <td><%= number_to_currency(product.price , :unit=>'€', separator:",", format:"%n%u")%></td>
         <td><%= link_to 'Anzeigen', product, class: 'btn btn-default btn-xs' %>
         <% if user_signed_in? %>
             <% if current_user.admin? %>
