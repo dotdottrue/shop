@@ -13,12 +13,13 @@ Rails.application.routes.draw do
   resources :users
 
   get ':category_id', to: 'products#index', as: 'category_products'
-  root 'products#index'
+  root 'store#index'
+  #match 'store/:id', to: 'store#show', as: :store_product, :via => :get
 
   get 'accountinformations/show'
 
   #Definition der Variable store, um bei Controllern auf diese verweisen zu können, z.B. Einkaufswagen gelöscht wird
-  root to: 'products#index', as: 'store'
+  #root to: 'products#index', as: 'store'
   root to: 'carts#index', as: 'myCart'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
