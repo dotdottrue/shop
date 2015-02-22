@@ -37,33 +37,45 @@
     <%= javascript_include_tag "application" %>
   </head>
   <body>
+      <div id="wrapper">
+        <div id="inhalt">
+            <%= render partial: 'shared/navigation' %>
 
-   <%= render partial: 'shared/navigation' %>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-9">
+                      <%= bootstrap_flash %>
+                      <%= yield %>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="well sidebar-nav">
+                        <h4>Links</h4>
+                        <hr>
+                        <ul class="nav nav-list">
+                          <li><%= link_to "Warenkorb", cart_path(current_cart)  %></li>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
-          <%= bootstrap_flash %>
-          <%= yield %>
+
+                        </ul>
+                      </div><!--/.well -->
+                    </div><!--/span-->
+                  </div><!--/row-->
+
+
+                </div> <!-- /container -->
+          </div>
+
+        <div id="footer">
+          <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-9">
+                    <p>&copy; 2015 dotDotTrue </p>
+                  </div>
+                </div>
+            </div>
+          </footer>
         </div>
-        <div class="col-lg-3">
-          <div class="well sidebar-nav">
-            <h4>Links</h4>
-            <hr>
-            <ul class="nav nav-list">
-              <li><%= link_to "Warenkorb", cart_path(current_cart)  %></li>
 
-              
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-      </div><!--/row-->
-    <hr>
-      <footer>
-        <p>&copy; dotDotTrue 2015</p>
-      </footer>
-
-    </div> <!-- /container -->
-
+      </div>
   </body>
 </html>
