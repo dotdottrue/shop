@@ -35,7 +35,7 @@
     <%= f.collection_select :category_ids, Category.all, :id, :name, { selected: @product.categories.map(&:id), include_hidden: false}, multiple: false, class: 'form-control', role: 'dropdown' %>
   </div>
   <div class="actions">
-    <%= f.submit "Produkt erstellen", :class => 'btn btn-default' %>
+    <%= f.submit "Produkt speichern", :class => 'btn btn-default' %>
   </div>
 
 <% end %>
