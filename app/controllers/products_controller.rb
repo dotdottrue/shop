@@ -22,7 +22,7 @@ class ProductsController < ApplicationController
     if current_user.admin?
       true
     else
-      redirect_to :products, alert: 'Sorry, you have to be an admin to do this!'
+      redirect_to :products, alert: 'Sorry, du musst Admin sein um das zu tun!'
     end
   end
 
@@ -43,7 +43,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.html { redirect_to @product, notice: 'Produkt wurde erfolgreich erstellt.' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
@@ -57,7 +57,7 @@ class ProductsController < ApplicationController
   def update
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
+        format.html { redirect_to @product, notice: 'Produkt wurde erfolgreich aktualisiert.' }
         format.json { render :show, status: :ok, location: @product }
       else
         format.html { render :edit }
@@ -71,7 +71,7 @@ class ProductsController < ApplicationController
   def destroy
     @product.destroy
     respond_to do |format|
-      format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
+      format.html { redirect_to products_url, notice: 'Produkt wurde erfolgreich entfernt.' }
       format.json { head :no_content }
     end
   end
