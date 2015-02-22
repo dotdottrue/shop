@@ -19,10 +19,6 @@ gem 'paperclip'
 gem 'devise'
 gem 'devise-bootstrap-views'
 
-group :development do
-  gem 'better_errors'
-end
-
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
@@ -35,4 +31,6 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'quiet_assets'
+  gem 'better_errors'
 end
