@@ -19,10 +19,12 @@
         <td><%= product.description %></td>
         <td><%= number_to_currency(product.price , :unit=>'€', separator:",", format:"%n%u")%></td>
         <td><%= link_to 'Anzeigen', product, class: 'btn btn-default btn-xs' %>
-
+        <% if user_signed_in? %>
+            <% if current_user.admin? %>
                 <%= link_to 'Bearbeiten', edit_product_path(product), class: 'btn btn-default btn-xs' %>
                 <%= link_to 'Entfernen', product, method: :delete, data: { confirm: 'Sind Sie sicher?' }, class: 'btn btn-default btn-xs'%>
-
+            <% end %>
+        <% end %>
           <%= button_to 'Zum Einkaufswagen', line_items_path(:product_id => product), :class => 'btn btn-default btn-xs' %>
         </td>
         <td></td>

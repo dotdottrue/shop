@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'categories/index'
+
   resources :orders
 
   resources :line_items
@@ -19,8 +21,9 @@ Rails.application.routes.draw do
   get 'accountinformations/show'
 
   #Definition der Variable store, um bei Controllern auf diese verweisen zu können, z.B. Einkaufswagen gelöscht wird
-  #root to: 'products#index', as: 'store'
+  root to: 'products#index', as: 'store'
   root to: 'carts#index', as: 'myCart'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
