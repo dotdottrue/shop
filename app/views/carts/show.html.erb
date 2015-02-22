@@ -22,7 +22,9 @@
         <td><%= item.product.name %></td>
         <td><%= item.quantity %></td>
         <td><%= number_to_currency(item.total_price) %></td>
-        <td><%= link_to 'Produkt entfernen', item, method: :delete, data: { confirm: 'Produkt wirklich entfernen?' }, class: 'btn btn-default btn-xs' %>
+        <td><%= link_to item, method: :delete, data: { confirm: 'Produkt wirklich entfernen?' }, class: 'btn btn-default btn-xs' do%>
+            <i class="fa fa-trash fa-lg">Löschen</i>
+          <% end %> </td>
 
       </tr>
     <% end %>
@@ -40,7 +42,9 @@
     <td></td>
     <% if @cart.line_items.present? %>
         <td>
-          <%= button_to 'Warenkorb leeren', @cart, :method => :delete, :confirm => "Sind Sie Sicher?", class: 'btn btn-default btn-xs' %>
+          <%= button_to  @cart, :method => :delete, :confirm => "Sind Sie Sicher?", class: 'btn btn-default btn-xs' do%>
+          <i class="fa fa-shopping-cart">Warenkorb leeren</i>
+          <% end %>
         </td>
         <td>
           <% if user_signed_in? %> 
