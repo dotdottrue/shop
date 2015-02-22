@@ -6,7 +6,7 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="navbar-brand" href="">dotDotTrue</a>
+    <a> <%= link_to 'dotDotTure', root_path, class: 'navbar-brand' %> </a>
     <div class="nav navbar-nav">
       <ul class="nav navbar-nav">
         <% Category.all.each do |category|  %>
