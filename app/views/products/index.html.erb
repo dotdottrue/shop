@@ -21,11 +21,9 @@
         <td><%= link_to product, class: 'btn btn-default btn-xs' do%>
           <i class="fa fa-eye">Anzeigen</i>
         <% end %>
-        <% if user_signed_in? %>
-            <% if current_user.admin? %>
-                <%= link_to 'Bearbeiten', edit_product_path(product), class: 'btn btn-default btn-xs' %>
-                <%= link_to 'Entfernen', product, method: :delete, data: { confirm: 'Sind Sie sicher?' }, class: 'btn btn-default btn-xs'%>
-            <% end %>
+        <% if current_user.admin %>
+            <%= link_to 'Bearbeiten', edit_product_path(product), class: 'btn btn-default btn-xs' %>
+            <%= link_to 'Entfernen', product, method: :delete, data: { confirm: 'Sind Sie sicher?' }, class: 'btn btn-default btn-xs'%>
         <% end %>
           <%= button_to line_items_path(:product_id => product), :class => 'btn btn-default btn-xs' do%>
           <i class="fa fa-shopping-cart fa-2x"></i>
@@ -38,8 +36,8 @@
 </table>
 
 <br>
-<% if user_signed_in? %>
-    <% if current_user.admin? %>
-        <%= link_to 'Neues Produkt', new_product_path, class: 'btn btn-default btn-xs' %>
-    <% end %>
+
+<% if current_user.admin? %>
+    <%= link_to 'Neues Produkt', new_product_path, class: 'btn btn-default btn-xs' %>
 <% end %>
+
