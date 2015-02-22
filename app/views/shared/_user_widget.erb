@@ -2,6 +2,9 @@
   <%= link_to 'Abmelden', destroy_user_session_path, :method => :delete %>
   <%= link_to 'Benutzerkonto', accountinformations_show_path %>
   <%= link_to 'Bestellungen', orders_path %>
+  <% if current_user.admin %>
+  	<%= link_to 'Produkt anlegen', new_product_path %>
+  <% end %>
 <% else %>
   <%= link_to 'Login', new_user_session_path %>
   <%= link_to 'Registrieren', new_user_registration_path %>

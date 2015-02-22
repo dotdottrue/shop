@@ -11,10 +11,9 @@
   <tr><td><%= @product.description %></td></tr>
   <tr><td>
     <%= link_to 'Zurück', products_path, class: 'btn btn-default btn-xs' %>
-    <% if user_signed_in? %>
-        <% if current_user.admin? %>
-            <%= link_to 'Bearbeiten', edit_product_path(@product), class: 'btn btn-default btn-xs' %>
-        <% end %>
+    <% if current_user.admin %>
+        <%= link_to 'Zurück zur Produkterstellung', new_product_path, class: 'btn btn-default btn-xs' %>
+        <%= link_to 'Bearbeiten', edit_product_path(@product), class: 'btn btn-default btn-xs' %>
     <% end %>
 
   </td></tr>
