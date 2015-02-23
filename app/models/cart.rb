@@ -1,5 +1,6 @@
 class Cart < ActiveRecord::Base
   has_many :line_items, :dependent => :destroy
+  has_one :shipping_method
 
   accepts_nested_attributes_for :line_items
 
@@ -25,4 +26,5 @@ class Cart < ActiveRecord::Base
   def total_vat
     line_items.to_a.sum{ |item| item.total_vat }
   end
+
 end

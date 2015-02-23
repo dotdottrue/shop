@@ -19,8 +19,8 @@
               <tr>
                 <td><%= line_item.product.name %></td>
                 <td>
-                  <%= hidden_field_tag "cart[line_line_items_attributes][#{index}][id]", line_item.id %>
-                  <%= text_field_tag "cart[line_line_items_attributes][#{index}][quantity]", line_item.quantity %>
+                  <%= hidden_field_tag "cart[line_items_attributes][#{index}][id]", line_item.id %>
+                  <%= text_field_tag "cart[line_items_attributes][#{index}][quantity]", line_item.quantity %>
                 </td>
                 <td><%= number_to_currency(line_item.total_price) %></td>
                 <td>
@@ -34,8 +34,8 @@
           <table class="table">
             <tr>
               <td width="40%"></td>
-              <td idth="15%">Versandkosten</td>
-              <td idth="15%"><%= number_to_currency(0) %></td>
+              <td width="21.75%">Versandkosten</td>
+              <td width="15%"><%= number_to_currency(0) %></td>
               <td></td>
             </tr>
             <tr>
@@ -52,20 +52,44 @@
             </tr>
           </tbody>
         </table>
+        <h3>Versandarten</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="40%">Versandart</th>
+              <th width="30%">Dauer</th>
+              <th width="15%">Preis</th>
+              <th width="20">MwSt</th>
+            </tr>
+          </thead>
+          <% ShippingMethod.all.each do |shipping_method| %>
+            <tbody>  
+              <td><%= shipping_method.name %></td>
+              <td><%= shipping_method.duration %></td>
+              <td><%= shipping_method.price %></td>
+              <td><%= number_to_currency(shipping_method.total_vat) %> </td> 
+            </tbody>
+          <% end %> 
+        </table>
 
-        <%= f.button '', :class => 'btn btn-default', type: 'submit', data: { disable_with: "Aktualisiere..." } do %>
+        <%= f.button '', :class => 'btn btn-default btn-md', type: 'submit', data: { disable_with: "Aktualisiere..." } do %>
           <i class="fa fa-save"></i> Aktualisieren
         <% end %>
 
+        <p></p>
+        <p></p>
+        <p></p>
 
       <% end %>
 
         <%= button_to  @cart, :method => :delete, :confirm => "Sind Sie Sicher?", class: 'btn btn-default btn-xs' do %>
           <i class="fa fa-shopping-cart"></i> Warenkorb leeren
         <% end %>
-
+        <p></p>
+        <p></p>
+        <p></p>
         <% if user_signed_in? %> 
-          <%= button_to 'Weiter', orders_path, class: 'btn btn-default btn-xs' %>
+          <%= button_to 'Kasse', carts_overview_path, class: 'btn btn-default btn-md' %>
         <% else %>
           <%= button_to 'Bitte melden Sie sich an', new_user_session_path, class: 'btn btn-default btn-xs' %>
         <%end%>

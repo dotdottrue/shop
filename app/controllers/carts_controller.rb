@@ -9,7 +9,7 @@ class CartsController < ApplicationController
 
   def update
     if @cart.update(cart_params)
-      redirect_to cart_path, notice: 'Cart was successfully updated.'
+      redirect_to cart_path, notice: 'Einkaufswagen wurde erfolgreich aktualisiert.'
     else
       redirect_to cart_path, alert: 'Error'
     end
@@ -21,6 +21,10 @@ class CartsController < ApplicationController
     session[:card_id] = nil
 
     redirect_to cart_path, notice: 'Ihr Einkaufwagen wurde erfolgreich geleert!' 
+  end
+
+  def overview
+    @cart = current_cart
   end
 
   private

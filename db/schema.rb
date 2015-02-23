@@ -11,11 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150223145745) do
+ActiveRecord::Schema.define(version: 20150223194932) do
 
   create_table "carts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "shipping_firstname"
+    t.string   "shipping_lastname"
+    t.string   "shipping_street"
+    t.integer  "shipping_zipcode"
+    t.string   "shipping_site"
+    t.string   "shipping_country"
   end
 
   create_table "categories", force: :cascade do |t|
@@ -69,6 +75,7 @@ ActiveRecord::Schema.define(version: 20150223145745) do
 
   create_table "shipping_methods", force: :cascade do |t|
     t.string   "name"
+    t.string   "duration"
     t.decimal  "price"
     t.decimal  "vat_rate"
     t.datetime "created_at", null: false
@@ -92,6 +99,8 @@ ActiveRecord::Schema.define(version: 20150223145745) do
     t.string   "firstname"
     t.string   "street"
     t.string   "zipcode"
+    t.string   "site"
+    t.string   "country"
     t.string   "telephone"
     t.date     "birth"
     t.string   "company"
