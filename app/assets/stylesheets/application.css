@@ -23,12 +23,13 @@ html, body{
     position: relative;
 }
 #inhalt{
-    padding-bottom:70px;
+    padding-bottom: 120px;
 }
 
 #footer{
-    height: 50px;
-    padding-top: 5px;
+
+    height: 100px;
+    padding-top: 10px;
     width: 100%;
     border-top: 1px;
     border: solid;
