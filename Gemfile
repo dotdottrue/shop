@@ -16,6 +16,7 @@ gem 'therubyracer'
 
 gem 'paperclip'
 gem "font-awesome-rails"
+gem 'will_paginate-bootstrap'
 
 gem 'devise'
 gem 'devise-bootstrap-views'

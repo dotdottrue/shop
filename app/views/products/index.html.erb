@@ -5,7 +5,7 @@
 
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <%= link_to image_tag(product.avatar.url(:small)), product %>
+        <%= link_to image_tag(product.avatar.url(:medium)), product %>
         <div class="caption">
           <h3><%= link_to product.name, product %></h3>
           <p><%= simple_format product.short_description %></p>
@@ -28,4 +28,6 @@
       <i class="fa fa-plus"></i> Produkt anlegen
     <% end %>
 <% end %>
+
+<%= will_paginate @products, renderer: BootstrapPagination::Rails %>
 

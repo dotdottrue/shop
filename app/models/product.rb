@@ -10,7 +10,7 @@ class Product < ActiveRecord::Base
   validates :name, :description, :short_description, :price, :vat_rate, :avatar, :categories, presence: true
   validates :short_description, length: {minimum: 50, maximum: 100}, allow_blank: true
 
-  has_attached_file :avatar, :styles => { :medium => '300x300', :small => '200x200', :mini => '100x100' }, :default_url => '/images/:style/missing.png'
+  has_attached_file :avatar, :styles => { :large =>'400x400', :medium => '350x250', :small => '200x200', :mini => '100x100' }, :default_url => '/images/:style/missing.png'
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
   def avatar_remote_url(url_value)
