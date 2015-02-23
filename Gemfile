@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
-gem 'sqlite3'
+
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'therubyracer'
@@ -21,7 +21,13 @@ gem 'devise-bootstrap-views'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 group :development, :test do
+  gem 'sqlite3'
   gem 'binding_of_caller'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
