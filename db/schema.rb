@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150222210001) do
+ActiveRecord::Schema.define(version: 20150223110238) do
 
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -56,12 +56,15 @@ ActiveRecord::Schema.define(version: 20150222210001) do
     t.string   "name"
     t.text     "description"
     t.decimal  "price",               precision: 8, scale: 2
-    t.datetime "created_at",                                  null: false
-    t.datetime "updated_at",                                  null: false
+    t.datetime "created_at",                                                 null: false
+    t.datetime "updated_at",                                                 null: false
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.text     "short_description"
+    t.float    "vat_rate"
+    t.boolean  "in_stock",                                    default: true
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,21 +1,22 @@
 class Cart < ActiveRecord::Base
   has_many :line_items, :dependent => :destroy
-  def add_product(product_id)
-    current_item = line_items.find_by_product_id(product_id)
-    if current_item
-      if current_item.quantity.nil?
-        current_item.quantity = 1
-      else
-        current_item.quantity += 1
-      end
 
+  def add_product(product_id)
+    new_product = line_items.find_by_product_id(product_id)
+    if new_product
+      if new_product.quantity.nil?
+        new_product.quantity = 1
+      else
+        new_product.quantity += 1
+      end
     else
-      current_item = line_items.build(:product_id => product_id)
+      new_product = line_items.build(:product_id => product_id)
     end
-    current_item
+
+    new_product
   end
 
   def total_price
-    line_items.to_a.sum{ |item| item.total_price}
+    line_items.to_a.sum{ |item| item.total_price }
   end
 end

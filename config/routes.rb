@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :line_items
 
-  resources :carts
+  resource :cart, :only => [:show, :update, :destroy]
 
   devise_for :users, :controllers=> { registrations: 'registrations' }
 
@@ -19,7 +19,6 @@ Rails.application.routes.draw do
 
   #Definition der Variable store, um bei Controllern auf diese verweisen zu können, z.B. Einkaufswagen gelöscht wird
   root to: 'products#index', as: 'store'
-  root to: 'carts#index', as: 'myCart'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

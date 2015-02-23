@@ -2,5 +2,6 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Anzeigen', @product, class: 'btn btn-default btn-xs' %> |
-<%= link_to 'Zurück', products_path, class: 'btn btn-default btn-xs' %>
+<%= link_to products_path, class: 'btn btn-default btn-xs' do %>
+	<i class="fa fa-caret-left"></i> Zurück
+<% end %>

@@ -13,29 +13,43 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.label :Bild %>
-    <%= f.file_field :avatar, class: 'btn btn-default' %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name, class: 'form-control' %>
   </div>
 
   <div class="form-group">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, class:'form-control' %>
+    <%= f.label :description %><br>
+    <%= f.text_area :description, class: 'form-control' %>
   </div>
+
   <div class="form-group">
-    <%= f.label :Beschreibung %><br>
-    <%= f.text_area :description, class:'form-control' %>
+    <%= f.label :short_description %><br>
+    <%= f.text_area :short_description, class: 'form-control' %>
   </div>
   
   <div class="form-group">
-    <%= f.label :Preis %><br>
-    <%= f.text_field :price, class:'form-control' %>
-  </div>
-  <div class="form-group">
-    <%= f.label :Kategorie %><br>
-    <%= f.collection_select :category_ids, Category.all, :id, :name, { selected: @product.categories.map(&:id), include_hidden: false}, multiple: true, class: 'form-control', role: 'dropdown' %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Produkt speichern", :class => 'btn btn-default' %>
+    <%= f.label :price %><br>
+    <%= f.text_field :price, class: 'form-control' %>
   </div>
 
+  <div class="form-group">
+    <%= f.label :vat_rate %><br>
+    <%= f.text_field :vat_rate, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :categories %><br>
+    <%= f.collection_select :category_ids, Category.all, :id, :name, { selected: @product.categories.map(&:id), include_blank: false }, multiple: true, class: 'form-control', role: 'dropdown' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar, class: 'btn btn-default' %>
+  </div>
+
+  <div class="actions">
+    <%= f.button '', :class => 'btn btn-default', data: { disable_with: "Speichern..." } do %>
+      <i class="fa fa-save"></i> Speichern
+    <% end %>
+  </div>
 <% end %>
