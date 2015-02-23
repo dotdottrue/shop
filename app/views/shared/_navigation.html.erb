@@ -14,7 +14,9 @@
         <% end %>
        </ul>
     </div>
+
     <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to cart_path do %> <i class="fa fa-shopping-cart fa-2x"></i> <% end %></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
           <% if user_signed_in? %> Willkommen, <%= current_user.firstname %>!<% else %> Sie sind nicht eingeloggt. <%end%>
