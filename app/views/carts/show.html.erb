@@ -4,60 +4,71 @@
   <div class=".col-xs-12">
 
     <% if @cart.line_items.present? %>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Produkt</th>
-            <th>Menge</th>
-            <th>Preis</th>
-            <th></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <% @cart.line_items.each do |item| %>
+      <%= form_for(@cart, :url => cart_path, :method => :put) do |f| %>
+        <table class="table">
+          <thead>
             <tr>
-              <td><%= item.product.name %></td>
-              <td><%= item.quantity %></td>
-              <td><%= number_to_currency(item.total_price) %></td>
-              <td>
-                <%= link_to item, method: :delete, data: { confirm: 'Produkt wirklich entfernen?' }, class: 'btn btn-default btn-xs' do %>
-                  <i class="fa fa-trash fa-lg">Löschen</i>
-                <% end %>
-              </td>
+              <th width="40%">Produkt</th>
+              <th width="15%">Menge</th>
+              <th width="15%">Preis</th>
+              <th></th>
             </tr>
-          <% end %>
-          <tr>
-            <td></td>
-            <td></td>
-            <td>Versandkosten</td>
-            <td><%= number_to_currency(0) %></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td>MwSt</td>
-            <td><%= number_to_currency(0) %></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td>Gesamt</td>
-            <td><%= number_to_currency(@cart.total_price) %></td>
-          </tr>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            <% @cart.line_items.each_with_index do |line_item, index| %>
+              <tr>
+                <td><%= line_item.product.name %></td>
+                <td>
+                  <%= hidden_field_tag "cart[line_line_items_attributes][#{index}][id]", line_item.id %>
+                  <%= text_field_tag "cart[line_line_items_attributes][#{index}][quantity]", line_item.quantity %>
+                </td>
+                <td><%= number_to_currency(line_item.total_price) %></td>
+                <td>
+                  <%= link_to line_item, method: :delete, data: { confirm: 'Produkt wirklich entfernen?' }, class: 'btn btn-default btn-xs' do %>
+                    <i class="fa fa-trash fa-lg"></i>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </table>
+          <table class="table">
+            <tr>
+              <td width="40%"></td>
+              <td idth="15%">Versandkosten</td>
+              <td idth="15%"><%= number_to_currency(0) %></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Enthaltene MwSt</td>
+              <td><%= number_to_currency(@cart.total_vat) %></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Gesamt</td>
+              <td><strong><%= number_to_currency(@cart.total_price) %></strong></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
 
-      <%= button_to  @cart, :method => :delete, :confirm => "Sind Sie Sicher?", class: 'btn btn-default btn-xs' do %>
-        <i class="fa fa-shopping-cart"></i> Warenkorb leeren
+        <%= f.button '', :class => 'btn btn-default', type: 'submit', data: { disable_with: "Aktualisiere..." } do %>
+          <i class="fa fa-save"></i> Aktualisieren
+        <% end %>
+
+
       <% end %>
 
-      <% if user_signed_in? %> 
-        <%= button_to 'Weiter', orders_path, class: 'btn btn-default btn-xs' %>
-      <% else %>
-        <%= button_to 'Bitte melden Sie sich an', new_user_session_path, class: 'btn btn-default btn-xs' %>
-      <%end%>
-        
+        <%= button_to  @cart, :method => :delete, :confirm => "Sind Sie Sicher?", class: 'btn btn-default btn-xs' do %>
+          <i class="fa fa-shopping-cart"></i> Warenkorb leeren
+        <% end %>
+
+        <% if user_signed_in? %> 
+          <%= button_to 'Weiter', orders_path, class: 'btn btn-default btn-xs' %>
+        <% else %>
+          <%= button_to 'Bitte melden Sie sich an', new_user_session_path, class: 'btn btn-default btn-xs' %>
+        <%end%>
     <% else %>
       <p>Der Warenkorb ist leer..</p>
     <% end %>

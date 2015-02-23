@@ -17,6 +17,10 @@ class Product < ActiveRecord::Base
     self.avatar = URI.parse(url_value)
   end
 
+  def vat
+    self.price * self.vat_rate / 100
+  end
+
   private
 
   def ensure_not_referenced_by_any_line_item
@@ -27,4 +31,5 @@ class Product < ActiveRecord::Base
       return false
     end
   end
+
 end

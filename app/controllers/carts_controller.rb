@@ -8,14 +8,10 @@ class CartsController < ApplicationController
   end
 
   def update
-    respond_to do |format|
-      if @cart.update(cart_params)
-        format.html { redirect_to @cart, notice: 'Cart was successfully updated.' }
-        format.json { render :show, status: :ok, location: @cart }
-      else
-        format.html { render :edit }
-        format.json { render json: @cart.errors, status: :unprocessable_entity }
-      end
+    if @cart.update(cart_params)
+      redirect_to cart_path, notice: 'Cart was successfully updated.'
+    else
+      redirect_to cart_path, alert: 'Error'
     end
   end
 
@@ -24,10 +20,7 @@ class CartsController < ApplicationController
     @cart.destroy
     session[:card_id] = nil
 
-    respond_to do |format|
-      format.html { redirect_to(store_url, notice: 'Ihr Einkaufwagen wurde erfolgreich geleert!') }
-      format.json { head :ok }
-    end
+    redirect_to cart_path, notice: 'Ihr Einkaufwagen wurde erfolgreich geleert!' 
   end
 
   private
@@ -35,11 +28,11 @@ class CartsController < ApplicationController
   def set_cart
     @cart = current_cart
 
-    redirect_to store_url, :notice => 'Warenkorb kann nicht geladen werden' if @cart.nil?
+    redirect_to cart_path, :notice => 'Warenkorb kann nicht geladen werden' if @cart.nil?
   end
 
   def cart_params
-    params[:cart]
+    params[:cart].permit(:shipping_method_id, :payment_method_id, line_items_attributes: [:id, :quantity, :_destroy])
   end
 
 end
