@@ -23,7 +23,7 @@
 
 <br>
 
-<% if current_user.admin? %>
+<% if user_signed_in? and current_user.admin %>
     <%= link_to new_product_path, class: 'btn btn-default btn-xs' do %>
       <i class="fa fa-plus"></i> Produkt anlegen
     <% end %>

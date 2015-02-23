@@ -9,9 +9,9 @@ class LineItemsController < ApplicationController
     @line_item = current_cart.add_product(product.id)
 
     if @line_item.save
-     redirect_to cart_url, notice: 'Line item was successfully added.'
+     redirect_to cart_url, notice: 'Produkt wurde erfolgreich hinzugefügt.'
     else
-      redirect_to cart_url, alert: 'Line item was not added.'
+      redirect_to cart_url, alert: 'Produkt wurde nicht hinzugefügt.'
     end
   end
 
@@ -19,9 +19,9 @@ class LineItemsController < ApplicationController
   # PATCH/PUT /line_items/1.json
   def update
     if @line_item.update(line_item_params)
-      redirect_to cart_url, notice: 'Line item was successfully updated.'
+      redirect_to cart_url, notice: 'Produkt wurde erfolgreich aktualisiert.'
     else
-      redirect_to cart_url, alert: 'Line item was not updated.'
+      redirect_to cart_url, alert: 'Produkt wurde nicht aktualisiert.'
     end
   end
 
@@ -30,7 +30,7 @@ class LineItemsController < ApplicationController
   def destroy
     @line_item.destroy
 
-    redirect_to cart_url, notice: 'Line item was successfully destroyed.'
+    redirect_to cart_url, notice: 'Produkt wurde erfolgreich gelöscht.'
   end
 
   private
