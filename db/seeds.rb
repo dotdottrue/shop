@@ -24,4 +24,3 @@ for i in 1..50
   product.categories << categories[Random.rand(categories.count)]
   product.save
 end
-

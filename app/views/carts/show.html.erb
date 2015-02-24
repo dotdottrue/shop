@@ -71,7 +71,7 @@
             <tbody>  
               <td><%= shipping_method.name %></td>
               <td><%= shipping_method.duration %></td>
-              <td><%= shipping_method.price %></td>
+              <td><%= number_to_currency(shipping_method.price) %></td>
               <td><%= number_to_currency(shipping_method.total_vat) %> </td> 
             </tbody>
           <% end %> 
@@ -94,7 +94,7 @@
         <p></p>
         <p></p>
         <% if user_signed_in? %> 
-          <%= button_to 'Kasse', carts_overview_path, class: 'btn btn-default btn-md' %>
+          <%= button_to 'Kasse', checkouts_overview_path, class: 'btn btn-default btn-md' %>
         <% else %>
           <%= button_to 'Bitte melden Sie sich an', new_user_session_path, class: 'btn btn-default btn-xs' %>
         <%end%>

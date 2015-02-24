@@ -28,7 +28,7 @@
     <%= f.datetime_select :order_date %>
   </div>
   <div class="form-group">
-    <%= f.label :bestellsttatus %><br>
+    <%= f.label :order_status %><br>
     <%= f.select :status, options_for_select(Order.statuses.map {|k, v| [k, k.humanize.capitalize]}) %>
   </div>
   <div class="actions">

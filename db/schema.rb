@@ -11,18 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150224111335) do
+ActiveRecord::Schema.define(version: 20150224145214) do
 
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
+    t.integer  "shipping_method_id", default: 1
     t.string   "shipping_firstname"
     t.string   "shipping_lastname"
     t.string   "shipping_street"
     t.integer  "shipping_zipcode"
     t.string   "shipping_site"
     t.string   "shipping_country"
-    t.integer  "shipping_method_id", default: 1
   end
 
   create_table "categories", force: :cascade do |t|
