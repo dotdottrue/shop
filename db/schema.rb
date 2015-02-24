@@ -11,18 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150224111335) do
+ActiveRecord::Schema.define(version: 20150223194932) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "carts", force: :cascade do |t|
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.string   "shipping_firstname"
     t.string   "shipping_lastname"
     t.string   "shipping_street"
     t.integer  "shipping_zipcode"
     t.string   "shipping_site"
     t.string   "shipping_country"
-    t.integer  "shipping_method_id", default: 1
   end
 
   create_table "categories", force: :cascade do |t|
@@ -56,8 +58,8 @@ ActiveRecord::Schema.define(version: 20150224111335) do
     t.datetime "updated_at",  null: false
   end
 
-  add_index "product_categories", ["category_id"], name: "index_product_categories_on_category_id"
-  add_index "product_categories", ["product_id"], name: "index_product_categories_on_product_id"
+  add_index "product_categories", ["category_id"], name: "index_product_categories_on_category_id", using: :btree
+  add_index "product_categories", ["product_id"], name: "index_product_categories_on_product_id", using: :btree
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
@@ -70,13 +72,12 @@ ActiveRecord::Schema.define(version: 20150224111335) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.text     "short_description"
-    t.float    "vat_rate"
+    t.decimal  "vat_rate"
     t.boolean  "in_stock",                                    default: true
   end
 
   create_table "shipping_methods", force: :cascade do |t|
     t.string   "name"
-    t.string   "duration"
     t.decimal  "price"
     t.decimal  "vat_rate"
     t.datetime "created_at", null: false
@@ -100,15 +101,13 @@ ActiveRecord::Schema.define(version: 20150224111335) do
     t.string   "firstname"
     t.string   "street"
     t.string   "zipcode"
-    t.string   "site"
-    t.string   "country"
     t.string   "telephone"
     t.date     "birth"
     t.string   "company"
     t.boolean  "admin",                  default: false
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

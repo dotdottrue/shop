@@ -15,7 +15,7 @@ gem 'less-rails'
 gem 'therubyracer'
 
 gem 'paperclip'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 gem 'will_paginate-bootstrap'
 
 gem 'devise'
@@ -24,12 +24,13 @@ gem 'devise-bootstrap-views'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :production do
-  gem 'pg'
+
   gem 'rails_12factor'
+  gem 'pg'
 end
 
 group :development, :test do
-  gem 'sqlite3'
+
   gem 'binding_of_caller'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
