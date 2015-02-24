@@ -14,6 +14,9 @@ gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'therubyracer'
 
+gem 'pdfkit'
+gem 'wkhtmltopdf-binary'
+
 gem 'paperclip'
 gem 'font-awesome-rails'
 gem 'will_paginate-bootstrap'
@@ -42,4 +45,5 @@ group :development, :test do
   gem 'spring'
   gem 'quiet_assets'
   gem 'better_errors'
+  gem 'unicorn'
 end

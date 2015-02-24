@@ -19,24 +19,43 @@ html, body{
 }
 
 #wrapper{
-    min-height:100%;
-    position: relative;
+  min-height:100%;
+  position: relative;
 }
 #inhalt{
-    padding-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 #footer{
+  height: 80px;
+  padding-top: 10px;
+  width: 100%;
+  border-top: 1px;
+  border: solid;
+  border-width: 1px;
+  border-color: #DDD;
+  background-color: #F8F8F8;
+  position: absolute;
+  bottom: 0;
+  }
 
-    height: 80px;
-    padding-top: 10px;
-    width: 100%;
-    border-top: 1px;
-    border: solid;
-    border-width: 1px;
-    border-color: #DDD;
-    background-color: #F8F8F8;
-    position: absolute;
-    bottom: 0;
+@media print {
+  body {
+    background-color: #FFF;
+  }
 
+  #container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  #line_items {
+    page-break-before: always;
+  }
+
+  #pdf_link {
+    display: none;
+  }
 }

@@ -8,7 +8,7 @@
 		<td><strong><%= @order.order_number %></strong></td>
 	  </tr>
 	</table>
-	<table class="table">
+	<table class="table", id="line_items">
 	  <thead>
 	  	 <tr>
           <th>Produkt</th>
@@ -93,5 +93,10 @@
 	  <br>
 	  <br>
 	  <p> Ihre Bestellung können sie jederzeit unter Bestellungen anschauen </p>
+	  <p id="pdf_link">
+	  	<%= link_to order_path(@order, :format =>"pdf"), class: 'btn btn-default btn-xs' do %>
+      	<i class"fa fa-download"></i> Rechnung downloaden
+      <% end %>
+	  </p>
   </div>
 </div>
