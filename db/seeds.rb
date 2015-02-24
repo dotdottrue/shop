@@ -11,7 +11,7 @@ Category.create!(name: 'Körner')
 Category.create!(name: 'Brötchen')
 
 ShippingMethod.create(name: 'Standard', duration: '3 Tage', price: 3.50, vat_rate: 7)
-ShippingMethod.create(name: 'Expresslieferung', duration: '1 Tag',price: 3.50, vat_rate: 7)
+ShippingMethod.create(name: 'Expresslieferung', duration: '1 Tag',price: 8.50, vat_rate: 7)
 ShippingMethod.create(name: 'Abholung', duration: 'Dauer bis zur Abholung', price: 0, vat_rate: 7)
 
 User.create!(email: 'admin@dotdottrue.com', password: 'admin678', firstname: 'Administrator', admin: true)
