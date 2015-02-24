@@ -29,8 +29,10 @@ class OrdersController < ApplicationController
   # POST /orders.json
   def create
     @order = Order.new
-
     @Cart = current_cart
+    puts "Debug"
+    puts @Cart.to_json
+    puts "DebugEnde"
     @order.total_price = @Cart.total_price
     @order.user_id=current_user.id
     @order.order_date=Time.now
