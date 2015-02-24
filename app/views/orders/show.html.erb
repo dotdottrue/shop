@@ -1,7 +1,77 @@
-<h1>Vielen Dank für Ihre Bestellung!</h1>
+<h1><strong>Vielen Dank für Ihre Bestellung!<strong></h1>
 
-<p>Ihre Bestellnummer lautet: <b><%= @order.order_number %></b>. Der zu Zahlende Betrag ist
-  <%= number_to_currency(@order.total_price, :unit=>'€', separator:",", format:"%n%u") %>.</p>
-<p>Bitte geben Sie die Bestellnummer als Verwendungszweck bei deiner Überweisung an, damit wir Ihre Zahlung zuordnen können.</p>
-<p> Unsere Kontodaten lauten: Sparkasse Münschterland Nord, IBAN DE87340014513452345</p>
+<div class="row">
+  <div class=".col-xs-3">
+  	<table class="table">
+  	  <tr>
+		<th>Ihre Bestellnummer lautet: </th>
+		<td><strong><%= @order.order_number %></strong></td>
+	  </tr>
+	  <tr>
+	  	<th>Der zu Zahlende Betrag ist: </th>
+	  	<td><strong><%= number_to_currency(@order.total_price) %><strong></td>
+	  </tr>	 
+	</table>
 
+	<h3>Rechnungsadresse</h3>
+	  <table class="table">
+	    <tr>
+	      <th width="15%">Name:</th>
+	      <td><%= current_user_order.lastname %></td>
+	    </tr>
+	    <tr>
+	      <th width="15%">Vorname:</th>
+	      <td><%= current_user_order.firstname %></td>
+	    </tr>
+	     <% if current_user_order.company %>
+	      <tr>
+	        <th width="15%">Firma: </th>
+	        <td><%= current_user_order.company %></td>
+	      </tr>
+	    <% end %>
+	    <tr>
+	      <th width="15%">Strasse:</th>
+	      <td><%= current_user_order.street %></td>
+	    </tr>
+	    <tr>
+	      <th width="15%">Postleitzahl:</th>
+	      <td><%= current_user_order.zipcode %></td>
+	    </tr>
+	    <tr>
+	      <th width="15%">Ort:</th>
+	      <td><%= current_user_order.site %></td>
+	    </tr>
+	    <tr>
+	      <th width="15%">Land:</th>
+	      <td><%= current_user_order.country %></td>
+	    </tr>
+	  </table>
+
+      <p><strong>Bitte geben Sie die Bestellnummer als Verwendungszweck bei deiner Überweisung an, damit wir Ihre Zahlung zuordnen können.<strong></p>
+      <br>
+      <br>
+      <h3>Unsere Kontodaten lauten:</h3>
+	  <table class="table">
+	  	<tr>
+	  	  <th>Name der Bank: </th>
+	  	  <td>Sparkasse Münschterland Nord</td>
+	  	</tr>
+	  	<tr>
+	  	  <th>IBAN-Nummer</th>
+	  	  <td>DE87340014513452345</td>
+	  	</tr>
+	  	<tr>
+	  	  <th>Verwendungszweck: </th>
+	  	  <td><%= @order.order_number %></td>
+	  	</tr>
+	  	<tr>
+	  	  <th>Betrag: </th>
+	  	  <td><%= number_to_currency(@order.total_price) %></td>
+	  	</tr>
+	  </table>
+
+	  <br>
+	  <br>
+	  <p> Ihre Bestellung können sie jederzeit unter Bestellungen anschauen </p>
+  </div>
+</div>

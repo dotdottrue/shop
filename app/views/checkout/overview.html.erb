@@ -28,7 +28,7 @@
             <tr>
               <td width="40%"></td>
               <td width="21.75%">Versandkosten</td>
-              <td width="15%"><%= number_to_currency(0) %></td>
+              <td width="15%"><%= number_to_currency(@cart.shipping_method.price) %></td>
               <td></td>
             </tr>
             <tr>
@@ -54,14 +54,12 @@
               <th width="15%">Preis</th>
               <th>MwSt</th>
             </tr>
-          <% ShippingMethod.all.each do |shipping_method| %>
-            <tbody>  
-              <td><%= shipping_method.name %></td>
-              <td><%= shipping_method.duration %></td>
-              <td><%= shipping_method.price %></td>
-              <td><%= number_to_currency(shipping_method.total_vat) %> </td> 
-            </tbody>
-          <% end %> 
+          <tbody>  
+            <td><%= @cart.shipping_method.name %></td>
+            <td><%= @cart.shipping_method.duration %></td>
+            <td><%= number_to_currency(@cart.shipping_method.price) %></td>
+            <td><%= number_to_currency(@cart.shipping_method.total_vat) %> </td> 
+          </tbody>
         </table>
       <% end %>
     <% end %>
@@ -100,56 +98,11 @@
             <td><%= current_user.country %></td>
           </tr>
         </table>
-       
-      <p> <%= check_box_tag '', 'Adresse verwenden?' %> <strong>Adresse verwenden?</strong> </p>
-      <p> <%= check_box_tag '', 'Adresse verwenden?' %> <strong>Lieferadresse</strong> </p>
-      <% end %>
-
-      <% if @cart.shipping_firstname %>
-
-      <P> lieferadresse aufführen </p>
       <% else %>
-      <%= form_for(@cart, :url => cart_path, :method => :put) do |f| %>
-        
-        <h3>Lieferandresse</h3>
-
-          <table class="table">
-            <tr>
-              <th width="10%"> <%= f.label :firstname %></th>
-              <td width="25%"><%= f.text_field :shipping_firstname, class: 'form-control' %><td>
-            </tr>
-            <tr>
-              <th width="10%"><%= f.label :lastname %></th>
-              <td width="25%"><%= f.text_field :shipping_lastname, class: 'form-control' %></td>
-            </tr>
-            <tr>
-              <th width="10%"><%= f.label :street %></th>
-              <td width="25%"><%= f.text_field :shipping_street, class: 'form-control' %></td>
-            </tr>
-            <tr>
-              <th width="10%"><%= f.label :zipcode %></th>
-              <td width="25%"><%= f.text_field :shipping_zipcode, class: 'form-control' %></td>
-            </tr>
-            <tr>
-              <th width="10%"><%= f.label :site %></th>
-              <td width="25%"><%= f.text_field :shipping_site, class: 'form-control' %></td>
-            </tr>
-            <tr>
-              <th width="10%"><%= f.label :country %></th>
-              <td width="25%"><%= f.text_field :shipping_country, class: 'form-control' %></td>
-            </tr>
-          </table>
-          <div class="actions">
-            <%= f.button '', :class => 'btn btn-default btn-xs', data: { disable_with: "Speichern..." } do %>
-              <i class="fa fa-save"></i> Speichern
-            <% end %>
-          </div>
-
-      <% end %>    
-     
+      	<p>Es wurde noch keine Adresse ihrem Account zugewiesen.<p>
+      	<%= link_to 'Adresse für diesen Account anlegen', edit_user_registration_path(current_user), class: 'btn btn-default btn-xs' %>
       <% end %>
-
-        <%= button_to 'Kostenpflichtig bestellen', orders_path, class: 'btn btn-default btn-xs' %>
+      <%= button_to 'Kostenpflichtig bestellen', orders_path, class: 'btn btn-default btn-xs' %>
 
   </div>
 </div>

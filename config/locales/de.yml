@@ -232,7 +232,10 @@ de:
         country: 'Land'
         password: 'Passwort'
         password_confirmation: 'Passwort wiederholen'
-        phone: 'Telefonnummer'  
+        phone: 'Telefonnummer'
+      order:
+        order_number: 'Bestellnummer'
+        order_date: 'Bestelldatum'
   will_paginate:
     previous_label: "&#8592; Zurück"
     next_label: "Weiter &#8594;"

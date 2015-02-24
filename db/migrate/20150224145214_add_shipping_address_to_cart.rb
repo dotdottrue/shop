@@ -1,4 +1,4 @@
-class AddShippingAddressToCard < ActiveRecord::Migration
+class AddShippingAddressToCart < ActiveRecord::Migration
   def change
   	add_column :carts, :shipping_firstname, :string
   	add_column :carts, :shipping_lastname, :string
