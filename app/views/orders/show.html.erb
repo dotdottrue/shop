@@ -7,11 +7,33 @@
 		<th>Ihre Bestellnummer lautet: </th>
 		<td><strong><%= @order.order_number %></strong></td>
 	  </tr>
-	  <tr>
-	  	<th>Der zu Zahlende Betrag ist: </th>
-	  	<td><strong><%= number_to_currency(@order.total_price) %><strong></td>
-	  </tr>	 
 	</table>
+	<table class="table">
+	  <thead>
+	  	 <tr>
+          <th>Produkt</th>
+          <th>Preis</th>
+          <th>Menge</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+		  <% @order.line_items.each do |items| %>
+		    <tr>
+			  <td><%= items.product.name %></td>
+			  <td><%= number_to_currency(items.product.price) %></td>
+			  <td><%= items.quantity %></td>
+		    </tr>
+		  <% end %>
+		  <tr>
+		  	<th>Der zu Zahlende Betrag ist: </th>
+		  	<td><strong><%= number_to_currency(@order.total_price) %><strong></td>
+		  </tr>	
+	  </tbody> 
+	</table>
+
+	<%= number_to_currency(@cart.shipping_method.price) %>
+
 
 	<h3>Rechnungsadresse</h3>
 	  <table class="table">

@@ -18,6 +18,8 @@ class OrdersController < ApplicationController
 
   # GET /orders/new
   def new
+    @cart = current_cart
+
     @order = Order.new
   end
 
@@ -28,12 +30,10 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    @order = Order.new
-    @Cart = current_cart
-    puts "Debug"
-    puts @Cart.to_json
-    puts "DebugEnde"
-    @order.total_price = @Cart.total_price
+    @order = Order.new(params[:order])
+    @order.add_line_items_from_cart(current_cart)
+
+    @order.total_price = current_cart.total_price
     @order.user_id=current_user.id
     @order.order_date=Time.now
 
@@ -44,12 +44,11 @@ class OrdersController < ApplicationController
     else
       @order.order_number = Order.last.order_number + 1
     end
-
-
-    @Cart.destroy
-    
+  
     respond_to do |format|
       if @order.save
+
+        current_cart.destroy
         format.html { redirect_to @order, notice: 'Bestellung wurde erfolgreich aufgegeben.' }
         format.json { render :show, status: :created, location: @order }
       else
