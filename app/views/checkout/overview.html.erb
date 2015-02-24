@@ -1,0 +1,108 @@
+<h1>Bestellübersicht</h1>
+
+<div class="row">
+  <div class=".col-xs-3">
+
+    <% if @cart.line_items.present? %>
+      <%= form_for(@cart, :url => cart_path, :method => :put) do |f| %>
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="40%">Produkt</th>
+              <th width="21.75%">Menge</th>
+              <th width="15%">Preis</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @cart.line_items.each_with_index do |line_item, index| %>
+              <tr>
+                <td><%= line_item.product.name %></td>
+                <td><%= line_item.quantity %></td>
+                <td><%= number_to_currency(line_item.total_price) %></td>
+                <td></td>
+              </tr>
+            <% end %>
+          </table>
+          <table class="table">
+            <tr>
+              <td width="40%"></td>
+              <td width="21.75%">Versandkosten</td>
+              <td width="15%"><%= number_to_currency(@cart.shipping_method.price) %></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Enthaltene MwSt</td>
+              <td><%= number_to_currency(@cart.total_vat) %></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Gesamt</td>
+              <td><strong><%= number_to_currency(@cart.total_price) %></strong></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Versandarten</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="20%">Versandart</th>
+              <th width="15%">Dauer</th>
+              <th width="15%">Preis</th>
+              <th>MwSt</th>
+            </tr>
+          <tbody>  
+            <td><%= @cart.shipping_method.name %></td>
+            <td><%= @cart.shipping_method.duration %></td>
+            <td><%= number_to_currency(@cart.shipping_method.price) %></td>
+            <td><%= number_to_currency(@cart.shipping_method.total_vat) %> </td> 
+          </tbody>
+        </table>
+      <% end %>
+    <% end %>
+
+      <h3>Rechnungsadresse</h3>
+      <% if current_user.zipcode and current_user.street and current_user.country and current_user.site %>
+        <table class="table">
+          <tr>
+            <th width="15%">Name:</th>
+            <td><%= current_user.lastname %></td>
+          </tr>
+          <tr>
+            <th width="15%">Vorname:</th>
+            <td><%= current_user.firstname %></td>
+          </tr>
+           <% if current_user.company %>
+            <tr>
+              <th width="15%">Firma: </th>
+              <td><%= @user.company %></td>
+            </tr>
+          <% end %>
+          <tr>
+            <th width="15%">Strasse:</th>
+            <td><%= current_user.street %></td>
+          </tr>
+          <tr>
+            <th width="15%">Postleitzahl:</th>
+            <td><%= current_user.zipcode %></td>
+          </tr>
+          <tr>
+            <th width="15%">Ort:</th>
+            <td><%= current_user.site %></td>
+          </tr>
+          <tr>
+            <th width="15%">Land:</th>
+            <td><%= current_user.country %></td>
+          </tr>
+        </table>
+      <% else %>
+      	<p>Es wurde noch keine Adresse ihrem Account zugewiesen.<p>
+      	<%= link_to 'Adresse für diesen Account anlegen', edit_user_registration_path(current_user), class: 'btn btn-default btn-xs' %>
+      <% end %>
+      <%= button_to 'Kostenpflichtig bestellen', orders_path, class: 'btn btn-default btn-xs' %>
+
+  </div>
+</div>
