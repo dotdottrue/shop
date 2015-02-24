@@ -70,7 +70,7 @@ ActiveRecord::Schema.define(version: 20150224145214) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.text     "short_description"
-    t.float    "vat_rate"
+    t.decimal  "vat_rate"
     t.boolean  "in_stock",                                    default: true
   end
 
