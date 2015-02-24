@@ -8,7 +8,6 @@ class CartsController < ApplicationController
   end
 
   def update
-
     if @cart.update(cart_params)
       redirect_to cart_path, notice: 'Einkaufswagen wurde erfolgreich aktualisiert.'
     else
@@ -24,10 +23,6 @@ class CartsController < ApplicationController
     redirect_to cart_path, notice: 'Ihr Einkaufwagen wurde erfolgreich geleert!' 
   end
 
-  def overview
-    @cart = current_cart
-  end
-
   private
 
   def set_cart
@@ -37,7 +32,7 @@ class CartsController < ApplicationController
   end
 
   def cart_params
-    params[:cart].permit(:shipping_method_id, :payment_method_id, line_items_attributes: [:id, :quantity, :_destroy])
+    params[:cart].permit(:shipping_method_id, :shipping_address_id, line_items_attributes: [:id, :quantity, :_destroy])
   end
 
 end
