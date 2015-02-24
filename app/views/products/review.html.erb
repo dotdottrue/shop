@@ -1,0 +1,55 @@
+<%= render partial: 'products/shared/producthead' %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class><%= link_to 'Beschreibung', @product %></li>
+        <li class="active"><%= link_to 'Kundenbewertung', :controller => :products, :action => :review, :id => @product %></li>
+      </ul>
+
+      <div>
+        <br>
+        <% if user_signed_in? %>
+            <%= form_for(@review) do |f| %>
+                <% if @review.errors.any? %>
+                    <div id="error_explanation">
+                      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+                      <ul>
+                        <% @review.errors.full_messages.each do |message| %>
+                            <li><%= message %></li>
+                        <% end %>
+                      </ul>
+                    </div>
+                <% end %>
+
+
+                <div class="form-group">
+                  <%= f.label :bewertung_schreiben %><br>
+                  <%= f.text_area :decription, class: 'form-control' %>
+                  <%= f.hidden_field :username, :value => current_user.firstname %>
+                  <%= f.hidden_field :product_id, :value => @product.id %>
+                </div>
+
+                <div class="actions">
+                  <%= f.button '', :class => 'btn btn-default', data: { disable_with: "Speichern..." } do %>
+                      <i class="fa fa-save"></i> Speichern
+                  <% end %>
+                </div>
+                <hr>
+            <% end %>
+        <% end %>
+      </div>
+      <div>
+        <% @reviews.each do |review| %>
+            <div class = "well">
+              <h4><%= review.username %></h4>
+
+              <p><%= review.decription %></p>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

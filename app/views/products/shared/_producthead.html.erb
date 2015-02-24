@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-5">
+      <%= image_tag @product.avatar.url(:large) %>
+    </div>
+    <div class="col-xs-7">
+
+      <h3><%= @product.name %></h3>
+
+      <hr>
+      <h3><%= number_to_currency(@product.price) %></h3>
+
+      <% if @product.in_stock %>
+          <p class="text-success">Lieferbar</p>
+      <% else %>
+          <p class="text-warning">Nicht lieferbar</p>
+      <% end %>
+
+      <hr>
+
+      <%= button_to line_items_path(:product_id => @product), :class => 'btn btn-success btn-sm' do %>
+          <i class="fa fa-shopping-cart fa-1x"></i> In den Einkaufswagen
+      <% end %>
+
+      <% if user_signed_in? and current_user.admin %>
+          <%= link_to 'Bearbeiten', edit_product_path(@product), class: 'btn btn-default btn-sm' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<br>
