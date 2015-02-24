@@ -98,11 +98,11 @@
             <td><%= current_user.country %></td>
           </tr>
         </table>
+        
+        <%= button_to 'Kostenpflichtig bestellen', orders_path, class: 'btn btn-default btn-xs' %>
       <% else %>
       	<p>Es wurde noch keine Adresse ihrem Account zugewiesen.<p>
       	<%= link_to 'Adresse für diesen Account anlegen', edit_user_registration_path(current_user), class: 'btn btn-default btn-xs' %>
-      <% end %>
-      <%= button_to 'Kostenpflichtig bestellen', orders_path, class: 'btn btn-default btn-xs' %>
-
+    <% end %>
   </div>
 </div>
