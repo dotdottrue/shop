@@ -3,6 +3,7 @@ require 'open-uri'
 class Product < ActiveRecord::Base
   attr_reader :avatar_remote_url
 
+  has_many :reviews
   has_many :line_items
   has_many :categories, through: :product_categories
   has_many :product_categories

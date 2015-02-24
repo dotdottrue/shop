@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :reviews
+
   resources :orders
 
   resources :line_items
@@ -11,6 +13,8 @@ Rails.application.routes.draw do
   resources :products
 
   resources :users
+
+  get '/review' => 'products#review'
 
   get ':category_id', to: 'products#index', as: 'category_products'
   root 'products#index'

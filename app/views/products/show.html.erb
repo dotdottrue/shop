@@ -1,17 +1,28 @@
-<h1><%= @product.name %></h1>
+<%= render partial: 'products/shared/producthead' %>
 
-<div class="row">
-  <div class="col-xs-5">
-    <%= image_tag @product.avatar.url(:large) %>
-  </div>
-  <div class="col-xs-7">
-      <p><%= simple_format @product.description %></p>
-      <h2><%= number_to_currency(@product.price) %></h2>
-      <%= button_to line_items_path(:product_id => @product), :class => 'btn btn-default btn-md' do %>
-        <i class="fa fa-shopping-cart fa-2x"></i> In den Einkaufswagen
-      <% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><%= link_to 'Beschreibung', @product %></li>
+        <li><%= link_to 'Kundenbewertung', :controller => :products, :action => :review, :id => @product %></li>
+      </ul>
+
+      <p> <%= simple_format @product.description %></p>
+
+    </div>
   </div>
 </div>
-<% if user_signed_in? and current_user.admin %>
-      <%= link_to 'Bearbeiten', edit_product_path(@product), class: 'btn btn-default btn-xs' %>
-  <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+

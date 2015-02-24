@@ -78,6 +78,14 @@ ActiveRecord::Schema.define(version: 20150224182622) do
     t.boolean  "in_stock",                                    default: true
   end
 
+  create_table "reviews", force: :cascade do |t|
+    t.string   "username"
+    t.text     "decription"
+    t.integer  "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "shipping_methods", force: :cascade do |t|
     t.string   "name"
     t.string   "duration"

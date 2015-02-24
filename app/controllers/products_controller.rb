@@ -18,6 +18,11 @@ class ProductsController < ApplicationController
   def show
   end
 
+  def review
+    @product = Product.find(params[:id])
+    @review = Review.new
+    @reviews = @product.reviews
+  end
 
   def is_admin?
     if current_user.admin?
