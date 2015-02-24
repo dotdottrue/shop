@@ -1,6 +1,6 @@
 class Cart < ActiveRecord::Base
   has_many :line_items, :dependent => :destroy
-  has_one :shipping_method
+  belongs_to :shipping_method
 
   accepts_nested_attributes_for :line_items
 

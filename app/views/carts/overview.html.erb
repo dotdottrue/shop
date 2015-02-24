@@ -100,9 +100,15 @@
             <td><%= current_user.country %></td>
           </tr>
         </table>
-        <p> <%= check_box_tag '', 'Adresse verwenden?' %> <strong>Adresse verwenden?</strong> </p>
-        <p> <%= check_box_tag '', 'Adresse verwenden?' %> <strong>Lieferadresse</strong> </p>
+       
+      <p> <%= check_box_tag '', 'Adresse verwenden?' %> <strong>Adresse verwenden?</strong> </p>
+      <p> <%= check_box_tag '', 'Adresse verwenden?' %> <strong>Lieferadresse</strong> </p>
+      <% end %>
 
+      <% if @cart.shipping_firstname %>
+
+      <P> lieferadresse aufführen </p>
+      <% else %>
       <%= form_for(@cart, :url => cart_path, :method => :put) do |f| %>
         
         <h3>Lieferandresse</h3>
@@ -139,7 +145,7 @@
             <% end %>
           </div>
 
-      <% end %>
+      <% end %>    
      
       <% end %>
 

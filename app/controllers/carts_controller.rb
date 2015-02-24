@@ -8,6 +8,7 @@ class CartsController < ApplicationController
   end
 
   def update
+
     if @cart.update(cart_params)
       redirect_to cart_path, notice: 'Einkaufswagen wurde erfolgreich aktualisiert.'
     else

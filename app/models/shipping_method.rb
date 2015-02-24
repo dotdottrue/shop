@@ -1,5 +1,5 @@
 class ShippingMethod < ActiveRecord::Base
-  belongs_to :order
+  has_many :carts
 
   def total_vat
   	self.vat_rate * self.price / 100
