@@ -32,7 +32,7 @@ class CartsController < ApplicationController
   end
 
   def cart_params
-    params[:cart].permit(:shipping_method_id, :shipping_address_id, line_items_attributes: [:id, :quantity, :_destroy])
+    params[:cart].permit(:shipping_method_id, :payment_id, line_items_attributes: [:id, :quantity, :_destroy])
   end
 
 end

@@ -2,6 +2,8 @@ class Order < ActiveRecord::Base
   has_one :user
   has_one :cart
   has_many :line_items, :dependent => :destroy
+  belongs_to :shipping_method
+  belongs_to :payment
 
   enum status: [:process, :payment, :shipping, :canceled]
 

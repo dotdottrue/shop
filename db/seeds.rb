@@ -14,6 +14,9 @@ ShippingMethod.create(name: 'Standard', duration: '3 Tage', price: 3.50, vat_rat
 ShippingMethod.create(name: 'Expresslieferung', duration: '1 Tag',price: 8.50, vat_rate: 7)
 ShippingMethod.create(name: 'Abholung', duration: 'Dauer bis zur Abholung', price: 0, vat_rate: 7)
 
+Payment.create(name: 'Vorkasse')
+Payment.create(name: 'Rechnung')
+
 User.create!(email: 'admin@dotdottrue.com', password: 'admin678', firstname: 'Administrator', admin: true)
 
 categories = Category.all

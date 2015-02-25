@@ -36,7 +36,8 @@ class OrdersController < ApplicationController
     @order.total_price = current_cart.total_price
     @order.user_id=current_user.id
     @order.order_date=Time.now
-
+    @order.shipping_method_id = current_cart.shipping_method_id
+    @order.payment_id = current_cart.payment_id
 
     tmp = 100000
     if Order.last.nil?
@@ -90,6 +91,6 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:order_number, :user_id, :total_price, :order_date)
+      params.require(:order).permit(:order_number, :user_id, :shipping_method_id, :payment_id, :total_price, :order_date)
     end
 end
