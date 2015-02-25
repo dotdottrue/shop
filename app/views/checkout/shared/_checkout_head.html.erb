@@ -1,0 +1,49 @@
+<div class="row">
+  <div class=".col-xs-3">
+    <h1>Bestellübersicht</h1>
+    <% if @cart.line_items.present? %>
+      <div id="left_table_box">
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="52%">Produkt</th>
+              <th width="30%">Menge</th>
+              <th >Preis</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @cart.line_items.each do |line_item| %>
+              <tr>
+                <td><%= line_item.product.name %></td>
+                <td><%= line_item.quantity %></td>
+                <td><%= number_to_currency(line_item.total_price) %></td>
+                <td></td>
+              </tr>
+            <% end %>
+          </table>
+          <table class="table">
+            <tr>
+              <td width="52%"></td>
+              <td width="30%">Versandkosten</td>
+              <td ><%= number_to_currency(@cart.shipping_method.price) %></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Enthaltene MwSt</td>
+              <td><%= number_to_currency(@cart.total_vat) %></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Gesamt</td>
+              <td><strong><%= number_to_currency(@cart.total_price) %></strong></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <%= render partial: 'checkout/shared/shipping_method' %>
+      <% end %>
+    </div>
