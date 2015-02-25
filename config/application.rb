@@ -6,16 +6,6 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-config.generators do |g|
-  g.test_framework :rspec,
-      fixtures: true,
-      view_Specs: false,
-      helper_specs: false,
-      routing_specs: false,
-      controller_specs: true,
-      requeest_specs: false
-  g.fixture_replacement :factory_girl, dir: "spec/factories"
-end
 
 module Webshop
   class Application < Rails::Application
