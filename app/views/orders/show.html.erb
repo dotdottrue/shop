@@ -88,8 +88,8 @@
 	  </table>
 
       <p><strong>Bitte geben Sie die Bestellnummer als Verwendungszweck bei der Überweisung an, damit wir Ihre Zahlung zuordnen können.<strong></p>
-      <br>
-      <br>
+      <br />
+      <br />
       <h4><strong>Unsere Kontodaten lauten:<strong></h4>
 	  <table class="table">
 	  	<tr>
@@ -110,8 +110,10 @@
 	  	</tr>
 	  </table>
 
-	  <br>
-	  <br>
+	  <br />
+	  <br />
 	  <p> Ihre Bestellung können sie jederzeit unter Bestellungen anschauen </p>
+
+	  <td><%= button_to 'Stornieren', {:controller => "orders", :action => "cancel_order"} %></td>
   </div>
 </div>

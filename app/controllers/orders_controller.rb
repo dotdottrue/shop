@@ -1,41 +1,27 @@
 class OrdersController < ApplicationController
-  before_action :set_order, only: [:show, :edit, :update, :destroy]
+  before_action :set_order, only: [:show, :edit, :update, :cancel_order, :destroy]
 
-  # GET /orders
-  # GET /orders.json
   def index
     if current_user.admin
       @orders = Order.all
     else
-      @orders = current_user.order
+      @orders = current_user.orders
     end
   end
 
-  # GET /orders/1
-  # GET /orders/1.json
   def show
   end
 
-  # GET /orders/new
-  def new
-    @cart = current_cart
-
-    @order = Order.new
-  end
-
-  # GET /orders/1/edit
   def edit
   end
 
-  # POST /orders
-  # POST /orders.json
   def create
-    @order = Order.new(params[:order])
+    @order = Order.new(order_params)
     @order.add_line_items_from_cart(current_cart)
 
     @order.total_price = current_cart.total_price
-    @order.user_id=current_user.id
-    @order.order_date=Time.now
+    @order.user_id = current_user.id
+    @order.order_date = Time.now
     @order.shipping_method_id = current_cart.shipping_method_id
     @order.payment_id = current_cart.payment_id
 
@@ -59,8 +45,6 @@ class OrdersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /orders/1
-  # PATCH/PUT /orders/1.json
   def update
     respond_to do |format|
       if @order.update(order_params)
@@ -73,8 +57,17 @@ class OrdersController < ApplicationController
     end
   end
 
-  # DELETE /orders/1
-  # DELETE /orders/1.json
+  def cancel_order
+
+    @order.status = :canceled
+
+    if @order.save
+      redirect_to orders_url, notice: 'Bestellung wurde erfolgreich storniert.'
+    else
+      redirect_to orders_url, alert: 'Bestellung wurde nicht storniert.'
+    end
+  end
+
   def destroy
     @order.destroy
     respond_to do |format|

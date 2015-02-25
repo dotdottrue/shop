@@ -26,6 +26,8 @@ Rails.application.routes.draw do
 
   post '/checkout/overview' => 'checkout#overview', as: 'checkouts_overview'
   get '/checkout/overview' => 'checkout#overview', as: 'checkout_overview'
+  
+  post '/orders/:id/cancel_order' => 'orders#cancel_order'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
