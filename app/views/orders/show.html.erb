@@ -1,23 +1,20 @@
-<h1><strong>Vielen Dank für Ihre Bestellung!<strong></h1>
-
 <div class="row">
   <div class=".col-xs-3">
-  	<table class="table">
-  	  <tr>
-		<th>Ihre Bestellnummer lautet: </th>
-		<td><strong><%= @order.order_number %></strong></td>
-	  </tr>
-	</table>
-	<table class="table">
-	  <thead>
-	  	 <tr>
-          <th>Produkt</th>
-          <th>Preis</th>
-          <th>Menge</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
+  	<h1><strong>Vielen Dank für Ihre Bestellung!<strong></h1>
+  	  <table class="table">
+	    <td>Ihre Bestellnummer lautet: <strong><%= @order.order_number %></strong></td>
+	  </table>
+	<h4><strong>Produktauflistung</strong></h4>
+	  <table class="table", id="line_items">
+	    <thead>
+	  	   <tr>
+            <th>Produkt</th>
+            <th>Preis</th>
+            <th>Menge</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
 		  <% @order.line_items.each do |items| %>
 		    <tr>
 			  <td><%= items.product.name %></td>
@@ -27,13 +24,36 @@
 		  <% end %>
 		  <tr>
 		  	<th>Der zu Zahlende Betrag ist: </th>
-		  	<td><strong><%= number_to_currency(@order.total_price) %><strong></td>
+		  	<td><strong><%= number_to_currency(@order.total_price) %><strong>(inkl. Versandkosten)</td>
 		  </tr>	
-	  </tbody> 
-	</table>
+	    </tbody> 
+	  </table>
 
+	<h4><strong>Versandart</strong></h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th width="20%">Versandart</th>
+            <th width="15%">Dauer</th>
+            <th width="15%">Preis</th>
+          </tr>
+        </thead>
+        <tbody>  
+          <td><%= @order.shipping_method.name %></td>
+          <td><%= @order.shipping_method.duration %></td>
+          <td><%= number_to_currency(@order.shipping_method.price) %></td>
+        </tbody>
+      </table>
 
-	<h3>Rechnungsadresse</h3>
+	<h4><strong>Rechnungsart</strong></h4>
+      <table class="table">
+      	<tr>
+          <td>Name der Rechnungsart: <%= @order.payment.name %></td>
+        </tr> 
+      </table>
+    <br />
+
+	<h4><strong>Rechnungsadresse</strong></h4>
 	  <table class="table">
 	    <tr>
 	      <th width="15%">Name:</th>
@@ -43,7 +63,7 @@
 	      <th width="15%">Vorname:</th>
 	      <td><%= current_user_order.firstname %></td>
 	    </tr>
-	     <% if current_user_order.company %>
+	    <% if current_user_order.company %>
 	      <tr>
 	        <th width="15%">Firma: </th>
 	        <td><%= current_user_order.company %></td>
@@ -70,7 +90,7 @@
       <p><strong>Bitte geben Sie die Bestellnummer als Verwendungszweck bei deiner Überweisung an, damit wir Ihre Zahlung zuordnen können.<strong></p>
       <br>
       <br>
-      <h3>Unsere Kontodaten lauten:</h3>
+      <h4><strong>Unsere Kontodaten lauten:<strong></h4>
 	  <table class="table">
 	  	<tr>
 	  	  <th>Name der Bank: </th>

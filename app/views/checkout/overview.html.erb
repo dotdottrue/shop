@@ -58,9 +58,12 @@
             <td><%= @cart.shipping_method.name %></td>
             <td><%= @cart.shipping_method.duration %></td>
             <td><%= number_to_currency(@cart.shipping_method.price) %></td>
-            <td><%= number_to_currency(@cart.shipping_method.total_vat) %> </td> 
+            <td><%= number_to_currency(@cart.shipping_method.total_vat) %></td> 
           </tbody>
         </table>
+
+        <h3>Rechnungsart</h3>
+          <p>Name der Rechnungsart: <strong><%= @cart.payment.name %><strong></p> 
       <% end %>
     <% end %>
 
@@ -101,8 +104,8 @@
         
         <%= button_to 'Kostenpflichtig bestellen', orders_path, class: 'btn btn-default btn-xs' %>
       <% else %>
-      	<p>Es wurde noch keine Adresse ihrem Account zugewiesen.<p>
-      	<%= link_to 'Adresse für diesen Account anlegen', edit_user_registration_path(current_user), class: 'btn btn-default btn-xs' %>
+        <p>Es wurde noch keine Adresse ihrem Account zugewiesen.<p>
+        <%= link_to 'Adresse für diesen Account anlegen', edit_user_registration_path(current_user), class: 'btn btn-default btn-xs' %>
     <% end %>
   </div>
 </div>

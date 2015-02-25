@@ -76,23 +76,21 @@
             </tbody>
           <% end %> 
         </table>
-
+        <h3>Bezahlmethode</h3>      
+        <p><%= collection_select :cart, :payment_id, Payment.all, :id, :name %></p>
+       
         <%= f.button '', :class => 'btn btn-default btn-md', type: 'submit', data: { disable_with: "Aktualisiere..." } do %>
           <i class="fa fa-save"></i> Aktualisieren
         <% end %>
-
-        <p></p>
-        <p></p>
-        <p></p>
-
+        <br />
+       
       <% end %>
-
+       <br />
         <%= button_to  @cart, :method => :delete, :confirm => "Sind Sie Sicher?", class: 'btn btn-default btn-xs' do %>
           <i class="fa fa-shopping-cart"></i> Warenkorb leeren
         <% end %>
-        <p></p>
-        <p></p>
-        <p></p>
+        <br />
+
         <% if user_signed_in? %> 
           <%= button_to 'Kasse', checkouts_overview_path, class: 'btn btn-default btn-md' %>
         <% else %>
