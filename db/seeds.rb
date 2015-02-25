@@ -17,7 +17,7 @@ ShippingMethod.create(name: 'Abholung', duration: 'Dauer bis zur Abholung', pric
 Payment.create(name: 'Vorkasse')
 Payment.create(name: 'Rechnung')
 
-User.create!(email: 'admin@dotdottrue.com', password: 'admin678', firstname: 'Administrator', admin: true)
+User.create!(email: 'admin@dotdottrue.com', password: 'admin678', firstname: 'Administrator', lastname: 'Administrator', admin: true)
 
 categories = Category.all
 

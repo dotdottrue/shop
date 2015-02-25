@@ -38,5 +38,36 @@ html, body{
     background-color: #F8F8F8;
     position: absolute;
     bottom: 0;
+}
+
+#left_table_box {
+    width: 65%;
+    float: left;
+    background-color: #FFF;
+}
+
+#left_box {
+    width: 45%;
+    float: left;
+    background-color: #FFF;
+}
+
+#blank_div {
+    width: 10%;
+    float: left;
+    background-color: #FFF;
+}
+
+#right_box {
+    width: 45%;
+    float: right;
+    background-color: #FFF;
+}
+
+#full_box {
+    width: 100%;
+    float: left;
+    background-color: #FFF;
+}
 
 }

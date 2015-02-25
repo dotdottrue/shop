@@ -236,6 +236,11 @@ de:
       order:
         order_number: 'Bestellnummer'
         order_date: 'Bestelldatum'
+        status:
+          canceled: 'Storniert'
+          process: 'In Bearbeitung'
+          payment: 'Bezahlt'
+          shipping: 'Versand'
   will_paginate:
     previous_label: "&#8592; Zurück"
     next_label: "Weiter &#8594;"

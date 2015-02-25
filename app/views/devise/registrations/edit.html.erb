@@ -12,6 +12,10 @@
   <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :role => 'form'}) do |f| %>
     <%= devise_error_messages! %>
       <div class="form-group">
+        <%= f.label :firma %>
+        <%= f.text_field :company, class: 'form-control' %>
+      </div>
+      <div class="form-group">
         <%= f.label :firstname %>
         <%= f.text_field :firstname, class: 'form-control' %>
       </div>
@@ -42,10 +46,6 @@
       <div class="form-group">
         <%= f.label :geburtsdatum %>
         <%= f.date_select :birth, :start_year => 1910, :end_year => Time.now.year, class: 'form-control' %>
-      </div>
-      <div class="form-group">
-        <%= f.label :firma %>
-        <%= f.text_field :company, class: 'form-control' %>
       </div>
 
     <hr>

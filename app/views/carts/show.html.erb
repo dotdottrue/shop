@@ -4,7 +4,7 @@
     <h1>Dein Warenkorb</h1>
 
     <% if @cart.line_items.present? %>
-      <%= form_for(@cart, :url => cart_path, :method => :put) do |f| %>
+      <%= form_for(@cart, :url => checkout_addresses_path, :method => :post) do |f| %>
         <table class="table">
           <thead>
             <tr>
@@ -78,24 +78,18 @@
         </table>
         <h3>Bezahlmethode</h3>      
         <p><%= collection_select :cart, :payment_id, Payment.all, :id, :name %></p>
-       
-        <%= f.button '', :class => 'btn btn-default btn-md', type: 'submit', data: { disable_with: "Aktualisiere..." } do %>
-          <i class="fa fa-save"></i> Aktualisieren
+        <br /> 
+        <% if user_signed_in? %> 
+          <%= f.submit 'Weiter', class: 'btn btn-default btn-md' %>
+        <% else %>
+          <%= link_to 'Bitte melden Sie sich an', new_user_session_path, class: 'btn btn-default btn-xs' %>
         <% end %>
-        <br />
-       
-      <% end %>
-       <br />
-        <%= button_to  @cart, :method => :delete, :confirm => "Sind Sie Sicher?", class: 'btn btn-default btn-xs' do %>
+      <% end %>    
+      <br />   
+      <br />
+      <%= button_to  @cart, :method => :delete, :confirm => "Sind Sie Sicher?", class: 'btn btn-default btn-xs' do %>
           <i class="fa fa-shopping-cart"></i> Warenkorb leeren
         <% end %>
-        <br />
-
-        <% if user_signed_in? %> 
-          <%= button_to 'Kasse', checkouts_overview_path, class: 'btn btn-default btn-md' %>
-        <% else %>
-          <%= button_to 'Bitte melden Sie sich an', new_user_session_path, class: 'btn btn-default btn-xs' %>
-        <%end%>
     <% else %>
       <p>Der Warenkorb ist leer..</p>
     <% end %>

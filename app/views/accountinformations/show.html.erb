@@ -18,12 +18,16 @@
         <td><%= @user.email %></td>
       </tr>
       <tr>
-        <th>Name:</th>
-        <td><%= @user.lastname %></td>
+        <th>Firma: </th>
+        <td><%= @user.company %></td>
       </tr>
       <tr>
         <th>Vorname:</th>
         <td><%= @user.firstname %></td>
+      </tr>
+      <tr>
+        <th>Name:</th>
+        <td><%= @user.lastname %></td>
       </tr>
       <tr>
         <th>Strasse:</th>
@@ -48,10 +52,6 @@
       <tr>
         <th>Geburtstag:</th>
         <td> <%= @user.birth %></td>
-      </tr>
-      <tr>
-        <th>Firma: </th>
-        <td><%= @user.company %></td>
       </tr>
   <% end %>
 </table>

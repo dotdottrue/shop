@@ -24,8 +24,12 @@ Rails.application.routes.draw do
   #Definition der Variable store, um bei Controllern auf diese verweisen zu können, z.B. Einkaufswagen gelöscht wird
   root to: 'products#index', as: 'store'
 
-  post '/checkout/overview' => 'checkout#overview', as: 'checkouts_overview'
-  get '/checkout/overview' => 'checkout#overview', as: 'checkout_overview'
+  
+  get '/checkout/addresses' => 'checkout#addresses'
+  get '/checkout/overview' => 'checkout#overview'
+
+  post '/checkout/addresses' => 'checkout#addresses'
+  post '/checkout/overview' => 'checkout#overview'
   
   post '/orders/:id/cancel_order' => 'orders#cancel_order'
   # Example of regular route:

@@ -11,13 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150225113045) do
+ActiveRecord::Schema.define(version: 20150225170003) do
 
   create_table "carts", force: :cascade do |t|
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-    t.integer  "shipping_method_id", default: 1
-    t.integer  "payment_id",         default: 1
+    t.datetime "created_at",                               null: false
+    t.datetime "updated_at",                               null: false
+    t.integer  "shipping_method_id",       default: 1
+    t.integer  "payment_id",               default: 1
+    t.string   "invoice_firstname"
+    t.string   "invoice_lastname"
+    t.integer  "invoice_zipcode"
+    t.string   "invoice_site"
+    t.string   "invoice_street"
+    t.string   "invoice_country"
+    t.string   "invoice_company"
+    t.string   "shipping_firstname"
+    t.string   "shipping_lastname"
+    t.integer  "shipping_zipcode"
+    t.string   "shipping_site"
+    t.string   "shipping_street"
+    t.string   "shipping_country"
+    t.string   "shipping_company"
+    t.boolean  "optional_invoice_address", default: false
   end
 
   create_table "categories", force: :cascade do |t|
@@ -35,16 +50,48 @@ ActiveRecord::Schema.define(version: 20150225113045) do
     t.integer  "order_id"
   end
 
+  create_table "order_line_items", force: :cascade do |t|
+    t.integer  "order_id"
+    t.string   "product_name"
+    t.text     "product_short_description"
+    t.text     "product_description"
+    t.decimal  "product_price"
+    t.decimal  "product_vat_rate"
+    t.integer  "product_quantity"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
   create_table "orders", force: :cascade do |t|
     t.integer  "order_number"
     t.integer  "user_id"
-    t.decimal  "total_price",        precision: 8, scale: 2
+    t.decimal  "vat_rate"
+    t.decimal  "total_vat_rate"
+    t.decimal  "total_price",              precision: 8, scale: 2
     t.datetime "order_date"
-    t.datetime "created_at",                                             null: false
-    t.datetime "updated_at",                                             null: false
-    t.integer  "status",                                     default: 0
+    t.datetime "created_at",                                                   null: false
+    t.datetime "updated_at",                                                   null: false
+    t.integer  "status",                                           default: 0
+    t.string   "invoice_firstname"
+    t.string   "invoice_lastname"
+    t.integer  "invoice_zipcode"
+    t.string   "invoice_site"
+    t.string   "invoice_street"
+    t.string   "invoice_country"
+    t.string   "invoice_company"
+    t.string   "shipping_firstname"
+    t.string   "shipping_lastname"
+    t.integer  "shipping_zipcode"
+    t.string   "shipping_site"
+    t.string   "shipping_street"
+    t.string   "shipping_country"
+    t.string   "shipping_company"
+    t.boolean  "optional_invoice_address"
     t.integer  "shipping_method_id"
     t.integer  "payment_id"
+    t.string   "shipping_method_name"
+    t.decimal  "shipping_method_price"
+    t.integer  "line_items"
   end
 
   create_table "payments", force: :cascade do |t|

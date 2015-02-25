@@ -14,16 +14,37 @@ class OrdersController < ApplicationController
 
   def edit
   end
-
+ 
   def create
-    @order = Order.new(order_params)
+    @order = Order.new
     @order.add_line_items_from_cart(current_cart)
 
     @order.total_price = current_cart.total_price
     @order.user_id = current_user.id
     @order.order_date = Time.now
-    @order.shipping_method_id = current_cart.shipping_method_id
     @order.payment_id = current_cart.payment_id
+    @order.shipping_method_id = current_cart.shipping_method_id
+    @order.shipping_method_name = current_cart.shipping_method.name
+    @order.shipping_method_price = current_cart.shipping_method.price
+
+    if current_cart.shipping_firstname.present?
+      @order.shipping_company = current_cart.shipping_company
+      @order.shipping_firstname = current_cart.shipping_firstname
+      @order.shipping_lastname = current_cart.shipping_lastname
+      @order.shipping_street = current_cart.shipping_street
+      @order.shipping_zipcode = current_cart.shipping_zipcode
+      @order.shipping_site = current_cart.shipping_site
+      @order.shipping_country = current_cart.shipping_country
+    end
+      @order.invoice_company = 
+      @order.invoice_firstname = current_cart.invoice_firstname
+      @order.invoice_lastname = current_cart.invoice_lastname
+      @order.invoice_street = current_cart.invoice_street
+      @order.invoice_zipcode = current_cart.invoice_zipcode
+      @order.invoice_site = current_cart.invoice_site
+      @order.invoice_country = current_cart.invoice_country
+
+    @order.optional_invoice_address = current_cart.optional_invoice_address
 
     tmp = 100000
     if Order.last.nil?
@@ -58,7 +79,6 @@ class OrdersController < ApplicationController
   end
 
   def cancel_order
-
     @order.status = :canceled
 
     if @order.save
