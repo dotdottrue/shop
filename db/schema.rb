@@ -11,18 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150224182622) do
+ActiveRecord::Schema.define(version: 20150225113045) do
 
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
     t.integer  "shipping_method_id", default: 1
-    t.string   "shipping_firstname"
-    t.string   "shipping_lastname"
-    t.string   "shipping_street"
-    t.integer  "shipping_zipcode"
-    t.string   "shipping_site"
-    t.string   "shipping_country"
+    t.integer  "payment_id",         default: 1
   end
 
   create_table "categories", force: :cascade do |t|
@@ -43,14 +38,19 @@ ActiveRecord::Schema.define(version: 20150224182622) do
   create_table "orders", force: :cascade do |t|
     t.integer  "order_number"
     t.integer  "user_id"
-    t.decimal  "total_price",   precision: 8, scale: 2
+    t.decimal  "total_price",        precision: 8, scale: 2
     t.datetime "order_date"
-    t.datetime "created_at",                                        null: false
-    t.datetime "updated_at",                                        null: false
-    t.integer  "status",                                default: 0
-    t.string   "product_name"
-    t.integer  "quantity"
-    t.decimal  "product_price"
+    t.datetime "created_at",                                             null: false
+    t.datetime "updated_at",                                             null: false
+    t.integer  "status",                                     default: 0
+    t.integer  "shipping_method_id"
+    t.integer  "payment_id"
+  end
+
+  create_table "payments", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "product_categories", force: :cascade do |t|

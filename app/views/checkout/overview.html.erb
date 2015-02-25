@@ -1,8 +1,6 @@
-<h1>Bestellübersicht</h1>
-
 <div class="row">
   <div class=".col-xs-3">
-
+    <h1>Bestellübersicht</h1>
     <% if @cart.line_items.present? %>
       <%= form_for(@cart, :url => cart_path, :method => :put) do |f| %>
         <table class="table">
@@ -62,8 +60,8 @@
           </tbody>
         </table>
 
-        <h3>Rechnungsart</h3>
-          <p>Name der Rechnungsart: <strong><%= @cart.payment.name %><strong></p> 
+        <h3>Bezahlart</h3>
+          <p>Name der Bezahlart: <strong><%= @cart.payment.name %><strong></p> 
       <% end %>
     <% end %>
 
