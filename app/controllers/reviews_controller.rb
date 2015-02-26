@@ -33,7 +33,7 @@ class ReviewsController < ApplicationController
         format.html { redirect_to @product, notice: 'Bewertung erfolgreich erstellt!' }
         format.json { render :show, status: :created, location: @review }
       else
-        format.html { render :new }
+        format.html { redirect_to @product, alert: 'Eine Bewertung muss einen Text enthalten!' }
         format.json { render json: @review.errors, status: :unprocessable_entity }
       end
     end
