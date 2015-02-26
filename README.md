@@ -6,19 +6,19 @@ Das Projekt beinhaltet einen funktionstüchtigen Webshop in welchem man sich als
 <h3>Starten der Applikation</h3>
 
 Um das Repository zu verwenden sollte man im Schritt 1 dieses Klonen.<br />
-Folgender Befehl ist dafür notwendig:<br />
+Folgender Befehl ist dafür notwendig:<br /><br />
 ``` git clone https://github.com/dotdottrue/shop.git ```
-<br />
-Der nächste Schritt ist das ausführen des Bundlers um die Gems zu installieren:<br />
+<br /><br />
+Der nächste Schritt ist das ausführen des Bundlers um die Gems zu installieren:<br /><br />
 ```bundle install```
-
+<br />
 Um eine reibungslose Verwendung von Paperclip sowie PG(PostgreSQL) zu gewährleisten wird empfohlen bzw.<br /> sollte noch folgendes per Commandline installiert werden.<br />
-Für <strong>Paperclip</srong> sollten folgende Befehle ausgeführt werden:<br />
-<strong>Mac: </strong><br />
+Für <b>Paperclip</b> sollten folgende Befehle ausgeführt werden:<br />
+<b>Mac: </b><br />
 ```brew install imagemagick```
-<br /><strong>Linux</strong><br />
+<br /><b>Linux</b><br />
 ```sudo apt-get install imagemagick```
-<br /><strong>Windows</strong><br />
+<br /><b>Windows</b><br />
 Falls Windows verwendet wird muss Imagemagick manuell installiert werden.<br />
 Den Download finden Sie unter folgendem Link: [DownloadLink](http://gnuwin32.sourceforge.net/packages/file.htm)
 <br /> <br />
