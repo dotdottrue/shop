@@ -214,6 +214,7 @@ de:
         in_stock: 'Lieferbar'
         categories: 'Kategorien'
       user:
+        company: 'Firma'
         firstname: 'Vorname'
         lastname: 'Nachname'
         street: 'Straße und Hausnummer'
@@ -224,6 +225,7 @@ de:
         password_confirmation: 'Passwort wiederholen'
         phone: 'Telefonnummer'
       cart:
+        company: 'Firma'
         firstname: 'Vorname'
         lastname: 'Nachname'
         street: 'Straße und Hausnummer'
