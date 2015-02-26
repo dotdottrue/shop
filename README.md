@@ -105,6 +105,6 @@ Ruby Standard Gems:
     gem 'font-awesome-rail'(Version 4.2.0.0)
   
   Benutzerverwaltung:
-    gem 'devise'
-    gem 'devise-bootstrap-views'
+    gem 'devise' (3.4.1)
+    gem 'devise-bootstrap-views' (0.0.4)
 ```
