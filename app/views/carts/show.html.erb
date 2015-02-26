@@ -10,7 +10,7 @@
             <tr>
               <th width="40%">Produkt</th>
               <th width="21.75%">Menge</th>
-              <th width="15%">Preis</th>
+              <th width="15%" class="text-right">Preis</th>
               <th></th>
             </tr>
           </thead>
@@ -22,7 +22,7 @@
                   <%= hidden_field_tag "cart[line_items_attributes][#{index}][id]", line_item.id %>
                   <%= text_field_tag "cart[line_items_attributes][#{index}][quantity]", line_item.quantity %>
                 </td>
-                <td><%= number_to_currency(line_item.total_price) %></td>
+                <td class="text-right"><%= number_to_currency(line_item.total_price) %></td>
                 <td>
                   <%= link_to line_item, method: :delete, data: { confirm: 'Produkt wirklich entfernen?' }, class: 'btn btn-default btn-xs' do %>
                     <i class="fa fa-trash fa-lg"></i>
@@ -36,22 +36,23 @@
               <td width="40%"></td>
               <td width="21.75%">Versandkosten</td>
               <% if @cart.shipping_method.present? %>
-                <td width="15%"><%= number_to_currency(@cart.shipping_method.price) %></td>
+                <td width="15%" class="text-right"><%= number_to_currency(@cart.shipping_method.price) %></td>
               <% else %>
                 <td width="15%"> - </td> 
               <% end %>
+              
               <td></td>
             </tr>
             <tr>
               <td></td>
               <td>Enthaltene MwSt</td>
-              <td><%= number_to_currency(@cart.total_vat) %></td>
+              <td class="text-right"><%= number_to_currency(@cart.total_vat) %></td>
               <td></td>
             </tr>
             <tr>
               <td></td>
               <td>Gesamt</td>
-              <td><strong><%= number_to_currency((@cart.total_price + @cart.shipping_method.price)) %></strong></td>
+              <td class="text-right"><strong><%= number_to_currency((@cart.total_price + @cart.shipping_method.price)) %></strong></td>
               <td></td>
             </tr>
           </tbody>
