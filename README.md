@@ -43,7 +43,7 @@ Ab diesem Punkt ist die ist der Webshop einsatzbereit und voll funktionsfähig.
 Es wird ein Adminbenutzer bei den Seeds mit angelegt. Dieser kann Produkte anlegen, und andere Daten einsehen, ändern etc.
 
 Mail:
-```admin@dotdottrue.de```<br />
+```admin@dotdottrue.com```<br />
 Passwort:<br />
 ```admin678```<br />
 
