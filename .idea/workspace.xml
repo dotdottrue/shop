@@ -2,257 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="000836b6-5c25-4971-a73e-0beae222a659" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/001/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/001/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/001/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/001/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/001/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/001/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/001/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/001/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/001/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/001/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/002/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/002/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/002/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/002/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/002/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/002/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/002/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/002/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/002/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/002/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/003/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/003/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/003/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/003/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/003/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/003/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/003/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/003/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/003/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/003/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/004/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/004/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/004/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/004/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/004/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/004/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/004/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/004/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/004/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/004/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/005/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/005/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/005/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/005/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/005/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/005/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/005/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/005/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/005/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/005/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/006/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/006/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/006/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/006/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/006/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/006/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/006/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/006/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/006/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/006/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/007/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/007/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/007/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/007/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/007/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/007/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/007/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/007/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/007/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/007/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/008/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/008/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/008/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/008/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/008/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/008/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/008/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/008/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/008/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/008/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/009/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/009/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/009/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/009/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/009/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/009/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/009/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/009/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/009/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/009/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/010/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/010/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/010/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/010/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/010/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/010/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/010/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/010/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/010/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/010/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/011/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/011/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/011/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/011/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/011/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/011/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/011/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/011/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/011/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/011/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/012/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/012/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/012/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/012/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/012/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/012/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/012/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/012/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/012/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/012/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/013/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/013/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/013/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/013/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/013/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/013/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/013/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/013/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/013/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/013/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/014/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/014/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/014/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/014/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/014/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/014/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/014/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/014/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/014/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/014/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/015/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/015/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/015/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/015/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/015/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/015/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/015/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/015/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/015/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/015/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/016/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/016/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/016/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/016/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/016/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/016/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/016/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/016/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/016/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/016/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/017/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/017/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/017/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/017/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/017/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/017/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/017/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/017/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/017/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/017/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/018/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/018/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/018/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/018/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/018/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/018/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/018/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/018/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/018/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/018/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/019/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/019/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/019/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/019/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/019/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/019/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/019/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/019/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/019/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/019/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/020/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/020/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/020/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/020/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/020/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/020/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/020/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/020/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/020/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/020/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/021/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/021/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/021/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/021/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/021/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/021/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/021/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/021/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/021/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/021/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/022/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/022/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/022/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/022/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/022/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/022/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/022/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/022/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/022/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/022/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/023/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/023/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/023/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/023/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/023/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/023/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/023/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/023/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/023/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/023/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/024/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/024/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/024/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/024/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/024/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/024/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/024/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/024/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/024/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/024/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/025/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/025/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/025/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/025/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/025/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/025/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/025/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/025/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/025/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/025/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/026/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/026/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/026/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/026/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/026/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/026/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/026/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/026/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/026/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/026/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/027/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/027/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/027/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/027/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/027/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/027/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/027/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/027/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/027/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/027/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/028/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/028/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/028/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/028/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/028/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/028/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/028/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/028/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/028/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/028/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/029/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/029/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/029/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/029/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/029/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/029/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/029/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/029/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/029/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/029/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/030/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/030/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/030/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/030/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/030/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/030/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/030/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/030/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/030/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/030/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/031/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/031/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/031/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/031/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/031/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/031/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/031/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/031/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/031/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/031/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/032/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/032/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/032/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/032/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/032/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/032/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/032/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/032/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/032/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/032/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/033/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/033/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/033/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/033/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/033/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/033/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/033/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/033/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/033/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/033/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/034/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/034/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/034/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/034/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/034/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/034/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/034/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/034/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/034/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/034/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/035/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/035/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/035/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/035/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/035/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/035/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/035/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/035/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/035/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/035/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/036/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/036/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/036/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/036/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/036/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/036/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/036/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/036/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/036/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/036/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/037/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/037/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/037/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/037/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/037/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/037/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/037/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/037/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/037/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/037/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/038/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/038/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/038/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/038/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/038/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/038/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/038/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/038/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/038/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/038/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/039/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/039/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/039/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/039/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/039/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/039/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/039/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/039/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/039/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/039/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/040/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/040/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/040/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/040/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/040/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/040/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/040/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/040/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/040/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/040/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/041/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/041/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/041/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/041/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/041/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/041/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/041/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/041/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/041/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/041/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/042/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/042/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/042/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/042/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/042/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/042/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/042/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/042/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/042/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/042/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/043/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/043/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/043/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/043/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/043/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/043/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/043/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/043/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/043/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/043/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/044/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/044/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/044/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/044/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/044/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/044/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/044/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/044/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/044/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/044/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/045/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/045/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/045/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/045/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/045/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/045/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/045/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/045/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/045/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/045/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/046/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/046/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/046/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/046/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/046/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/046/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/046/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/046/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/047/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/047/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/047/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/047/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/047/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/047/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/047/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/047/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/047/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/047/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/048/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/048/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/048/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/048/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/048/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/048/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/048/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/048/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/048/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/048/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/049/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/049/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/049/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/049/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/049/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/049/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/049/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/049/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/049/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/049/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/050/large/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/050/large/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/050/medium/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/050/medium/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/050/mini/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/050/mini/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/050/original/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/050/original/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/products/avatars/000/000/050/small/200" afterPath="$PROJECT_DIR$/public/system/products/avatars/000/000/050/small/200" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_navigation.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_navigation.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/shop.iml" afterPath="$PROJECT_DIR$/.idea/shop.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/review.rb" afterPath="$PROJECT_DIR$/app/models/review.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -279,31 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="products_controller_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/controllers/products_controller_spec.rb">
+      <file leaf-file-name="review.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/review.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.2" vertical-offset="2282" max-vertical-offset="2970">
-              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carts_controller_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/controllers/carts_controller_spec.rb">
+      <file leaf-file-name="reviews_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.2" vertical-offset="493" max-vertical-offset="2970">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_navigation.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_navigation.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="630">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.35747662" vertical-offset="324" max-vertical-offset="1386">
+              <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -318,6 +59,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/views/shared/_navigation.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/review.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
       </list>
     </option>
   </component>
@@ -327,8 +70,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="24" />
-    <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="width" value="1855" />
+    <option name="height" value="959" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -353,6 +96,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -478,16 +222,52 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Rails.Production: shop">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -558,25 +338,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="959" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -605,7 +385,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/spec/controllers/products_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.2" vertical-offset="2282" max-vertical-offset="2970">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2282" max-vertical-offset="2970">
           <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding />
         </state>
@@ -613,7 +393,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/carts_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.2" vertical-offset="493" max-vertical-offset="2970">
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="2970">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
@@ -621,8 +401,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_navigation.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="630">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_navigation.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17370325" vertical-offset="0" max-vertical-offset="829">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/carts_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7067757" vertical-offset="493" max-vertical-offset="2970">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/products_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87383175" vertical-offset="2114" max-vertical-offset="2970">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/review.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/reviews_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35747662" vertical-offset="324" max-vertical-offset="1386">
+          <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
           <folding />
         </state>
       </provider>
