@@ -1,32 +1,33 @@
 <h1>Webentwicklung II Projekt</h1>
 Das Projekt wurde in ```Ruby 2.2.0``` und< ```Rails 4.2.0```entwickelt.
 
-<p>Das Projekt beinhaltet einen funktionstüchtigen Webshop in welchem man sich als Benutzer registrieren kann und auch Einkäufe tätigen kann.</p>
+Das Projekt beinhaltet einen funktionstüchtigen Webshop in welchem man sich als Benutzer registrieren kann und auch Einkäufe tätigen kann.
 
 <h3>Starten der Applikation</h3>
 
-<p>Um das Repository zu verwenden sollte man im Schritt 1 dieses Klonen.</p>
-<p>Folgender Befehl ist dafür notwendig:</p><br />
+Um das Repository zu verwenden sollte man im Schritt 1 dieses Klonen.<br />
+Folgender Befehl ist dafür notwendig:<br />
 ``` git clone https://github.com/dotdottrue/shop.git ```
 <br />
 <p>Der nächste Schritt ist das ausführen des Bundlers um die Gems zu installieren:</p><br />
 ```bundle install```
 
-<p>Um eine reibungslose Verwendung von Paperclip sowie PG(PostgreSQL) zu gewährleisten wird empfohlen bzw.<br /> sollte noch folgendes per Commandline installiert werden.</p><br />
-<p>Für <strong>Paperclip</srong> sollten folgende Befehle ausgeführt werden:</p><br />
+Um eine reibungslose Verwendung von Paperclip sowie PG(PostgreSQL) zu gewährleisten wird empfohlen bzw.<br /> sollte noch folgendes per Commandline installiert werden.<br />
+Für <strong>Paperclip</srong> sollten folgende Befehle ausgeführt werden:<br />
 <strong>Mac: </strong><br />
 ```brew install imagemagick```
 <br /><strong>Linux</strong><br />
 ```sudo apt-get install imagemagick```
 <br /><strong>Windows</strong><br />
-Falls Windows verwendet wird muss Imagemagick manuell installiert werden.
+Falls Windows verwendet wird muss Imagemagick manuell installiert werden.<br />
 Den Download finden Sie unter folgendem Link: [DownloadLink](http://gnuwin32.sourceforge.net/packages/file.htm)
-
-Bei evtl. Problemen mit <strong>PostgreSQL</strong>
-<strong>Mac: </strong>
+<br /> <br />
+Bei evtl. Problemen mit <strong>PostgreSQL</strong><br />
+<strong>Mac: </strong><br />
 ```brew install imagemagick```
-<strong>Linux</strong>
-```brew update```
+<br /><strong>Linux</strong><br />
+```brew update``` 
+<br />
 ```brew install postgresql```
 
 Nachdem der Bundler durchgelaufen ist und oben genannte Befehle ausgeführt wurden (da notwendig oder durch Fehler)
