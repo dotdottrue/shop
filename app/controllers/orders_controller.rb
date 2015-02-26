@@ -20,6 +20,7 @@ class OrdersController < ApplicationController
     @order.add_line_items_from_cart(current_cart)
 
     @order.total_price = current_cart.total_price
+    @order.total_vat = current_cart.total_vat
     @order.user_id = current_user.id
     @order.order_date = Time.now
     @order.payment_id = current_cart.payment_id
