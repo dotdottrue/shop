@@ -28,7 +28,7 @@ Bei Problemen mit <strong>PostgreSQL</strong><br />
 <br />
 ```brew install postgresql```
 <br /><strong>Linux</strong><br />
-```sudo apt-get install libpq-dev``
+```sudo apt-get install libpq-dev```
 
 Nachdem der Bundler durchgelaufen ist und oben genannte Befehle ausgeführt wurden (da notwendig oder durch Fehler)
 kann die Datenbank migriert werden.
@@ -43,7 +43,7 @@ Ab diesem Punkt ist die ist der Webshop einsatzbereit und voll funktionsfähig.
 Es wird ein Adminbenutzer bei den Seeds mit angelegt. Dieser kann Produkte anlegen, und andere Daten einsehen, ändern etc.
 
 Mail:
-```admin@dotdottrue.de```<br />
+```admin@dotdottrue.com```<br />
 Passwort:<br />
 ```admin678```<br />
 
@@ -59,7 +59,7 @@ Für die spätere Zahlungs- bzw. Rechnungsprüfung wird eine nachgelagerte Backe
 Um den Webshop auch live zu sehen können sie unter folgendem Link eine Deployte Version des Webshops finden.
 [KLICK MICH!](https://cryptic-beach-5711.herokuapp.com)
 
-Viel Spaß beim verwenden des Webshops!
+Viel Spaß beim verwenden/durchklicken des Webshops!
 
 <h3>Gemliste</h3>
 
@@ -105,6 +105,6 @@ Ruby Standard Gems:
     gem 'font-awesome-rail'(Version 4.2.0.0)
   
   Benutzerverwaltung:
-    gem 'devise'
-    gem 'devise-bootstrap-views'
+    gem 'devise' (3.4.1)
+    gem 'devise-bootstrap-views' (0.0.4)
 ```
