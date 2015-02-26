@@ -28,7 +28,7 @@ Bei Problemen mit <strong>PostgreSQL</strong><br />
 <br />
 ```brew install postgresql```
 <br /><strong>Linux</strong><br />
-```sudo apt-get install libpq-dev``
+```sudo apt-get install libpq-dev```
 
 Nachdem der Bundler durchgelaufen ist und oben genannte Befehle ausgeführt wurden (da notwendig oder durch Fehler)
 kann die Datenbank migriert werden.
