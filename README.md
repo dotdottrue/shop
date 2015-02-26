@@ -12,7 +12,7 @@ Folgender Befehl ist dafür notwendig:<br /><br />
 Der nächste Schritt ist das ausführen des Bundlers um die Gems zu installieren:<br /><br />
 ```bundle install```
 <br />
-Um eine reibungslose Verwendung von Paperclip sowie PG(PostgreSQL) zu gewährleisten wird empfohlen bzw.<br /> sollte noch folgendes per Commandline installiert werden.<br />
+Um eine reibungslose Verwendung von <b>Paperclip</b> sowie <b>PG(PostgreSQL)</b> zu gewährleisten wird empfohlen bzw.<br /> sollte noch folgendes per Commandline installiert werden.<br />
 Für <b>Paperclip</b> sollten folgende Befehle ausgeführt werden:<br />
 <b>Mac: </b><br />
 ```brew install imagemagick```
@@ -22,28 +22,42 @@ Für <b>Paperclip</b> sollten folgende Befehle ausgeführt werden:<br />
 Falls Windows verwendet wird muss Imagemagick manuell installiert werden.<br />
 Den Download finden Sie unter folgendem Link: [DownloadLink](http://gnuwin32.sourceforge.net/packages/file.htm)
 <br /> <br />
-Bei evtl. Problemen mit <strong>PostgreSQL</strong><br />
+Bei Problemen mit <strong>PostgreSQL</strong><br />
 <strong>Mac: </strong><br />
-```brew install imagemagick```
-<br /><strong>Linux</strong><br />
 ```brew update``` 
 <br />
 ```brew install postgresql```
+<br /><strong>Linux</strong><br />
+```sudo apt-get install libpq-dev``
 
 Nachdem der Bundler durchgelaufen ist und oben genannte Befehle ausgeführt wurden (da notwendig oder durch Fehler)
 kann die Datenbank migriert werden.
 
-Befehl dafür ist:
 ```rake db:migrate```
 
-Nach erfolgreichem Migrieren der Datenbank kann diese mit Testdaten/Seeds befüllt werden.
-```rake db:seed```
+Nach erfolgreichem Migrieren der Datenbank kann diese mit Testdaten/Seeds befüllt werden.<br />
+```rake db:seed```<br />
 
 Ab diesem Punkt ist die ist der Webshop einsatzbereit und voll funktionsfähig.
 
-Es wird ein Adminuser bei den Seeds mit angelegt. Dieser kann produkte anlegen, und andere Daten einsehen, ändern etc.
+Es wird ein Adminbenutzer bei den Seeds mit angelegt. Dieser kann Produkte anlegen, und andere Daten einsehen, ändern etc.
+
+Mail:
+```admin@dotdottrue.de```<br />
+Passwort:<br />
+```admin678```<br />
 
 Ein Standardbenutzer wird nicht mit angelegt, da dieser eigenständig Angelegt werden kann und die Funktionen mit diesem durchlaufen werden können.
+
+Um den Shop leichtgewichtig zu halten wurden keine extravagenten Zahlungsmethoden integriert.
+Desweiteren wurde eine spezielle Rollenverwaltung nicht integriert, da diese bei diesem Shop nicht unbedingt notwendig war, und alle Funktionalitäten über ein Adminflag in der Datenbank gelöst werden konnte.
+
+Für die spätere Zahlungs- bzw. Rechnungsprüfung wird eine nachgelagerte Backendlösung angedacht diese soll dann die Prüfung der Einzahlungen gegen die Rechnungen prüfen und die Bestellstati daraufhin ändern.
+
+<h3>Heroku</h3>
+
+Um den Webshop auch live zu sehen können sie unter folgendem Link eine Deployte Version des Webshops finden.
+[KLICK MICH!](https://cryptic-beach-5711.herokuapp.com)
 
 Viel Spaß beim verwenden des Webshops!
 
