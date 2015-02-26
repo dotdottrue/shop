@@ -65,8 +65,7 @@ ActiveRecord::Schema.define(version: 20150225170003) do
   create_table "orders", force: :cascade do |t|
     t.integer  "order_number"
     t.integer  "user_id"
-    t.decimal  "vat_rate"
-    t.decimal  "total_vat_rate"
+    t.decimal  "total_vat"
     t.decimal  "total_price",              precision: 8, scale: 2
     t.datetime "order_date"
     t.datetime "created_at",                                                   null: false

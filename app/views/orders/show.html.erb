@@ -8,13 +8,12 @@
 		  </table>
 			<h4><strong>Produktauflistung</strong></h4>
 			  <div id="left_table_box">
-				  <table class="table", id="line_items">
+				  <table class="table">
 				    <thead>
 				  	   <tr>
 			            <th width="45%">Produkt</th>
 	             		<th width="30%">Menge</th>
-			            <th>Preis</th>
-			            <th></th>
+			            <th align="right">Preis</th>
 			          </tr>
 			        </thead>
 			        <tbody>
@@ -25,12 +24,24 @@
 						  <td><%= number_to_currency(items.product_price) %></td>
 					    </tr>
 					  <% end %>
+					</table>
+					<table class="table">
+            <tr>
+              <td width="45%"></td>
+              <td width="30%">Versandkosten</td>
+              <td align="right"><%= number_to_currency(@order.shipping_method_price) %></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Enthaltene MwSt</td>
+              <td align="right"><%= number_to_currency(@order.total_vat) %></td>
+            </tr>
 					  <tr>
-					  	<th>Der zu Zahlende Betrag ist: </th>
+					  	<th>Der zu Zahlende Betrag ist:</th>
 					  	<td></td>
-					  	<td><strong><%= number_to_currency(@order.total_price) %></strong>(inkl. Versandkosten)</td>
+					  	<td align="right"><strong><%= number_to_currency(@order.total_price) %></strong></td>
 					  </tr>	
-				    </tbody> 
+			    </tbody> 
 				  </table>
 				</div>
 				<div id="full_box">
@@ -114,7 +125,7 @@
 			  <div id="full_box">
 				  <p> Ihre Bestellung können sie jederzeit unter <strong><%= link_to 'Bestellungen', orders_path %></strong> anschauen </p>
 
-			  <td><%= button_to 'Stornieren', {:controller => "orders", :action => "cancel_order"} %></td>
+			  <td><%= button_to 'Stornieren', {:controller => "orders", :action => "cancel_order"}, class: 'btn btn-default btn-md'%></td>
 			</div>
 		</div>
   </div>

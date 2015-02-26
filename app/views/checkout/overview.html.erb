@@ -49,9 +49,11 @@
       <% end %>
       <% end %> 
     <div id="full_box">   
-      <% if @cart.shipping_firstname.present? or ( @cart.invoice_site and @cart.invoice_zipcode) or (current_user.zipcode and current_user.street and current_user.country and current_user.site) %>    
+      <% if (@cart.shipping_firstname.present? and @cart.shipping_lastname.present? and @cart.shipping_street? and @cart.shipping_zipcode and @cart.shipping_country) or ( @cart.invoice_site and @cart.invoice_zipcode and @cart.invoice_country and @cart.invoice_street) or (current_user.zipcode and current_user.street and current_user.country and current_user.site) %>    
         <%= button_to 'Bestellung aufgeben', orders_path, class: 'btn btn-default btn-xs' %>
-      <% end %>
+      <% else %>
+      <p><strong> Sie müssen erst eine vollständige Adresse angeben um die Bestellung abschließen zu können!</strong></p>
+      <% end %> 
     </div>
   </div>
 </div>
