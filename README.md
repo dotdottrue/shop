@@ -1,18 +1,18 @@
 <h1>Webentwicklung II Projekt</h1>
-Das Projekt wurde in ```Ruby 2.2.0``` und ```Rails 4.2.0```entwickelt.
+Das Projekt wurde in ```Ruby 2.2.0``` und< ```Rails 4.2.0```entwickelt.
 
 <p>Das Projekt beinhaltet einen funktionstüchtigen Webshop in welchem man sich als Benutzer registrieren kann und auch Einkäufe tätigen kann.</p>
 
 <h3>Starten der Applikation</h3>
 
-Um das Repository zu verwenden sollte man im Schritt 1 dieses Klonen.
-Folgender Befehl ist dafür notwendig:
+<p>Um das Repository zu verwenden sollte man im Schritt 1 dieses Klonen.</p>
+<p>Folgender Befehl ist dafür notwendig:</p><br />
 ```git clone https://github.com/dotdottrue/shop.git```
 
-Der nächste Schritt ist das ausführen des Bundlers um die Gems zu installieren:
+<p>Der nächste Schritt ist das ausführen des Bundlers um die Gems zu installieren:</p><br />
 ```bundle install```
 
-Um eine reibungslose Verwendung von Paperclip sowie PG(PostgreSQL) zu gewährleisten wird empfohlen bzw. sollte noch folgendes per Commandline installiert werden.
+<p>Um eine reibungslose Verwendung von Paperclip sowie PG(PostgreSQL) zu gewährleisten wird empfohlen bzw.<br /> sollte noch folgendes per Commandline installiert werden.</p>
 Für <strong>Paperclip</srong> sollten folgende Befehle ausgeführt werden:
 <strong>Mac: </strong>
 ```brew install imagemagick```
