@@ -7,18 +7,18 @@ Das Projekt wurde in ```Ruby 2.2.0``` und< ```Rails 4.2.0```entwickelt.
 
 <p>Um das Repository zu verwenden sollte man im Schritt 1 dieses Klonen.</p>
 <p>Folgender Befehl ist dafür notwendig:</p><br />
-```git clone https://github.com/dotdottrue/shop.git```
-
+``` git clone https://github.com/dotdottrue/shop.git ```
+<br />
 <p>Der nächste Schritt ist das ausführen des Bundlers um die Gems zu installieren:</p><br />
 ```bundle install```
 
-<p>Um eine reibungslose Verwendung von Paperclip sowie PG(PostgreSQL) zu gewährleisten wird empfohlen bzw.<br /> sollte noch folgendes per Commandline installiert werden.</p>
-Für <strong>Paperclip</srong> sollten folgende Befehle ausgeführt werden:
-<strong>Mac: </strong>
+<p>Um eine reibungslose Verwendung von Paperclip sowie PG(PostgreSQL) zu gewährleisten wird empfohlen bzw.<br /> sollte noch folgendes per Commandline installiert werden.</p><br />
+<p>Für <strong>Paperclip</srong> sollten folgende Befehle ausgeführt werden:</p><br />
+<strong>Mac: </strong><br />
 ```brew install imagemagick```
-<strong>Linux</strong>
+<br /><strong>Linux</strong><br />
 ```sudo apt-get install imagemagick```
-<strong>Windows</strong>
+<br /><strong>Windows</strong><br />
 Falls Windows verwendet wird muss Imagemagick manuell installiert werden.
 Den Download finden Sie unter folgendem Link: [DownloadLink](http://gnuwin32.sourceforge.net/packages/file.htm)
 
