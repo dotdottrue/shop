@@ -68,12 +68,10 @@
       </div> 
       <div id="left_box">   
         <table class="table">
-          <% if current_user.company %>
-            <tr>
-              <th><%= f.label :company %></th>
-              <td><%= f.text_field :invoice_company %></td>
-            </tr>
-          <% end %>
+          <tr>
+            <th><%= f.label :company %></th>
+            <td><%= f.text_field :invoice_company %></td>
+          </tr>
           <tr>
             <th><%= f.label :firstname %></th>
             <td><%= f.text_field :invoice_firstname %></td>
@@ -102,12 +100,10 @@
     </div>
     <div id="right_box">
       <table class="table">
-        <% if current_user.company %>
-          <tr>
-            <th><%= f.label :company %></th>
-            <td><%= f.text_field :shipping_company %></td>
-          </tr>
-        <% end %>
+        <tr>
+          <th><%= f.label :company %></th>
+          <td><%= f.text_field :shipping_company %></td>
+        </tr>
         <tr>
           <th><%= f.label :firstname %></th>
           <td><%= f.text_field :shipping_firstname %></td>
