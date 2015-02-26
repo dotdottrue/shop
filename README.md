@@ -9,7 +9,7 @@ Um das Repository zu verwenden sollte man im Schritt 1 dieses Klonen.<br />
 Folgender Befehl ist dafür notwendig:<br />
 ``` git clone https://github.com/dotdottrue/shop.git ```
 <br />
-<p>Der nächste Schritt ist das ausführen des Bundlers um die Gems zu installieren:</p><br />
+Der nächste Schritt ist das ausführen des Bundlers um die Gems zu installieren:<br />
 ```bundle install```
 
 Um eine reibungslose Verwendung von Paperclip sowie PG(PostgreSQL) zu gewährleisten wird empfohlen bzw.<br /> sollte noch folgendes per Commandline installiert werden.<br />
