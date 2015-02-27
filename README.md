@@ -61,6 +61,11 @@ Um den Webshop auch live zu sehen können sie unter folgendem Link eine Deployte
 
 Viel Spaß beim verwenden/durchklicken des Webshops!
 
+<h3>Dokumentation und User Stories</h3>
+
+Eine Ausführliche Dokumentation und die User Stories finden Sie in der Wiki<br>
+[Zum Wiki!](https://github.com/dotdottrue/shop/wiki)
+
 <h3>Gemliste</h3>
 
 <p>In dem Webshop wurden folgende Gems verwendet:</p>
