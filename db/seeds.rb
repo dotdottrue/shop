@@ -23,7 +23,7 @@ categories = Category.all
 
 for i in 1..50
   product = Product.new(name: "Test #{i}", description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit ame', short_description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l', vat_rate: 7, price: Random.rand(100))
-  product.avatar_remote_url('http://egri.at/images/product_images/popup_images/824202_0.jpg')
+  product.avatar_remote_url('http://lorempixel.com/400/200/')
   product.categories << categories[Random.rand(categories.count)]
   product.save
 end
