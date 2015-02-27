@@ -18,8 +18,9 @@
 				<%= render partial: 'orders/shared/account_data' %>
 			  <div id="full_box">
 				  <p> Ihre Bestellung können sie jederzeit unter <strong><%= link_to 'Bestellungen', orders_path %></strong> anschauen </p>
-
-			  <td><%= button_to 'Bestellung stornieren', {:controller => "orders", :action => "cancel"}, class: 'btn btn-default btn-md'%></td>
+				<% if @order.status != "canceled" %>
+			  	<td><%= button_to 'Bestellung stornieren', {:controller => "orders", :action => "cancel"}, class: 'btn btn-default btn-md'%></td>
+			  <% end %>
 			</div>
 		</div>
   </div>
