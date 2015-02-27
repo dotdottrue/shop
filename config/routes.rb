@@ -2,7 +2,11 @@ Rails.application.routes.draw do
 
   resources :reviews
 
-  resources :orders
+  resources :orders do
+    member do
+      get 'cancel', as: 'cancel'
+    end
+  end
 
   resources :line_items
 
@@ -30,8 +34,7 @@ Rails.application.routes.draw do
 
   post '/checkout/addresses' => 'checkout#addresses'
   post '/checkout/overview' => 'checkout#overview'
-  
-  post '/orders/:id/cancel_order' => 'orders#cancel_order'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

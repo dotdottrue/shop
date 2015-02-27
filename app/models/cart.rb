@@ -5,6 +5,8 @@ class Cart < ActiveRecord::Base
 
   accepts_nested_attributes_for :line_items
 
+  #validates :invoice_firstname, :invoice_lastname, :invoice_zipcode, :invoice_site, :invoice_street, :invoice_country, presence: true
+
   def add_product(product_id)
     new_product = line_items.find_by_product_id(product_id)
     if new_product

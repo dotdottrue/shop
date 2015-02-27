@@ -1,131 +1,25 @@
 <div class="row">
   <div class=".col-xs-3">
-  	<h1><strong>Vielen Dank für Ihre Bestellung!</strong></h1>
   	<br />
-  	<br />
-	  	<table class="table">
-		    <td>Ihre Bestellnummer lautet: <strong><%= @order.order_number %></strong></td>
-		  </table>
-			<h4><strong>Produktauflistung</strong></h4>
-			  <div id="left_table_box">
-				  <table class="table">
-				    <thead>
-				  	   <tr>
-			            <th width="45%">Produkt</th>
-	             		<th width="30%">Menge</th>
-			            <th class="text-right">Preis</th>
-			          </tr>
-			        </thead>
-			        <tbody>
-					  <% @order.order_line_items.each do |items| %>
-					    <tr>
-						  <td><%= items.product_name %></td>
-						  <td><%= items.product_quantity %></td>
-						  <td class="text-right"><%= number_to_currency(items.product_price) %></td>
-					    </tr>
-					  <% end %>
-					</table>
-					<table class="table">
-            <tr>
-              <td width="45%"></td>
-              <td width="30%">Versandkosten</td>
-              <td class="text-right"><%= number_to_currency(@order.shipping_method_price) %></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Enthaltene MwSt</td>
-              <td class="text-right"><%= number_to_currency(@order.total_vat) %></td>
-            </tr>
-					  <tr>
-					  	<th>Der zu Zahlende Betrag ist:</th>
-					  	<td></td>
-					  	<td class="text-right"><strong><%= number_to_currency(@order.total_price) %></strong></td>
-					  </tr>	
-			    </tbody> 
-				  </table>
-				</div>
-				<div id="full_box">
-					<h4>Versand- und Bezahlart</h4>
-			      <p>Die Versandart ist <strong><%= @order.shipping_method_name %></strong>.</p>
-			      <p>Und die Bezahlart ist <strong><%= @order.payment.name %></strong>.</p> 
-			    <br />
-			  </div>
+	    <h2>Bestell-Nr. <strong><%= @order.order_number %></strong></h2>
+	    <br />
+				<%= render partial: 'orders/shared/products' %>
+				<%= render partial: 'orders/shared/delivery_and_payment' %>
 		    <% if @order.optional_invoice_address %>
 					<%= render partial: 'orders/shared/address' %>
 				<% else %>
 					<%= render partial: 'orders/shared/address' %>
 					<div id="blank_div">
 		      </div>
-		      <% if @order.shipping_zipcode and @order.shipping_site %>
-		        <div id="right_box">
-		          <h4><strong>Lieferadresse</h4></strong>
-		           <table class="table">
-		            <% if @order.shipping_company.present? %>
-		              <tr>
-		                <th width="30%">Firma: </th>
-		                <td><%= @order.shipping_company %></td>
-		              </tr>
-		            <% end %>
-		            <tr>
-		              <th width="30%">Vorname:</th>
-		              <td><%= @order.shipping_firstname %></td>
-		            </tr>
-		            <tr>
-		              <th width="30%">Nachname:</th>
-		              <td><%= @order.shipping_lastname %></td>
-		            </tr>
-		            <tr>
-		              <th width="30%">Strasse:</th>
-		              <td><%= @order.shipping_street %></td>
-		            </tr>
-		            <tr>
-		              <th width="30%">Postleitzahl:</th>
-		              <td><%= @order.shipping_zipcode %></td>
-		            </tr>
-		            <tr>
-		              <th width="30%">Ort:</th>
-		              <td><%= @order.shipping_site %></td>
-		            </tr>
-		            <tr>
-		              <th width="30%">Land:</th>
-		              <td><%= @order.shipping_country %></td>
-		            </tr>
-		          </table>    
-		        </div>
+		      <% if @order.shipping_zipcode and @order.shipping_site %> 
+		        <%= render partial: 'orders/shared/shipping' %>
 		      <% end %>
 				<% end %> 
-				<div id="full_box">
-
-		    <p><strong>Bitte geben Sie die Bestellnummer als Verwendungszweck bei der Überweisung an, damit wir Ihre Zahlung zuordnen können.</strong></p>
-		    <br />
-		    <br />
-		    <div id="left_table_box">
-			    <h4><strong>Unsere Kontodaten lauten:</strong></h4>
-				  <table class="table">
-				  	<tr>
-				  	  <th>Name der Bank: </th>
-				  	  <td>Sparkasse Münschterland Nord</td>
-				  	</tr>
-				  	<tr>
-				  	  <th>IBAN-Nummer</th>
-				  	  <td>DE87340014513452345</td>
-				  	</tr>
-				  	<tr>
-				  	  <th>Verwendungszweck: </th>
-				  	  <td><%= @order.order_number %></td>
-				  	</tr>
-				  	<tr>
-				  	  <th>Betrag: </th>
-				  	  <td><%= number_to_currency(@order.total_price) %></td>
-				  	</tr>
-				  </table>
-				 </div>
-			  <br />
-			  <br />
+				<%= render partial: 'orders/shared/account_data' %>
 			  <div id="full_box">
 				  <p> Ihre Bestellung können sie jederzeit unter <strong><%= link_to 'Bestellungen', orders_path %></strong> anschauen </p>
 
-			  <td><%= button_to 'Stornieren', {:controller => "orders", :action => "cancel_order"}, class: 'btn btn-default btn-md'%></td>
+			  <td><%= button_to 'Stornieren', {:controller => "orders", :action => "cancel"}, class: 'btn btn-default btn-md'%></td>
 			</div>
 		</div>
   </div>

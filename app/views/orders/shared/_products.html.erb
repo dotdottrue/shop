@@ -1,0 +1,39 @@
+<h4><strong>Produktauflistung</strong></h4>
+<div id="left_table_box">
+  <table class="table">
+  <thead>
+	   <tr>
+        <th width="45%">Produkt</th>
+     		<th width="30%">Menge</th>
+        <th class="text-right">Preis</th>
+      </tr>
+    </thead>
+    <tbody>
+	  <% @order.order_line_items.each do |items| %>
+	    <tr>
+			  <td><%= items.product_name %></td>
+			  <td><%= items.product_quantity %></td>
+			  <td class="text-right"><%= number_to_currency(items.product_price) %></td>
+	    </tr>
+	  <% end %>
+		</table>
+		<table class="table">
+		  <tr>
+		    <td width="45%"></td>
+		    <td width="30%">Versandkosten</td>
+		    <td class="text-right"><%= number_to_currency(@order.shipping_method_price) %></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		    <td>Enthaltene MwSt</td>
+		    <td class="text-right"><%= number_to_currency(@order.total_vat) %></td>
+		  </tr>
+		  <tr>
+		  	<th>Der zu Zahlende Betrag ist:</th>
+		  	<td></td>
+		  	<td class="text-right"><strong><%= number_to_currency(@order.total_price) %></strong></td>
+		  </tr>	
+		</tbody> 
+	</table>
+</div>
+<div id="full_box">

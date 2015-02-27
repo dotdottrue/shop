@@ -1,0 +1,10 @@
+<div id="right_box">
+	<h4><strong>Lieferadresse</h4></strong>
+	<% if @order.shipping_company.present? %>
+	  <p><%= @order.shipping_company %></p>
+	<% end %>
+	<p><%= "#{@order.shipping_firstname} #{@order.shipping_lastname}" %></p>
+	<p><%= @order.shipping_street %></p>
+	<p><%= "#{@order.shipping_zipcode} #{@order.shipping_site}" %></p>
+	<p><%= @order.shipping_country %></p>
+</div>

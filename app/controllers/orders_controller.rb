@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  before_action :set_order, only: [:show, :edit, :update, :cancel_order, :destroy]
+  before_action :set_order, only: [:show, :edit, :update, :cancel, :destroy]
 
   def index
     if current_user.admin
@@ -47,39 +47,21 @@ class OrdersController < ApplicationController
 
     @order.optional_invoice_address = current_cart.optional_invoice_address
 
-    tmp = 100000
     if Order.last.nil?
-      @order.order_number = tmp
+      @order.order_number = 100000
     else
       @order.order_number = Order.last.order_number + 1
     end
   
-    respond_to do |format|
-      if @order.save
-
-        current_cart.destroy
-        format.html { redirect_to @order, notice: 'Bestellung wurde erfolgreich aufgegeben.' }
-        format.json { render :show, status: :created, location: @order }
-      else
-        format.html { render :new }
-        format.json { render json: @order.errors, status: :unprocessable_entity }
-      end
+    if @order.save
+      current_cart.destroy
+      render :created
+    else
+      redirect_to checkout_overview_path, :alert => 'Fehler Nr. 42'
     end
   end
 
-  def update
-    respond_to do |format|
-      if @order.update(order_params)
-        format.html { redirect_to @order, notice: 'Bestellung wurde erfolgreich geändert.' }
-        format.json { render :show, status: :ok, location: @order }
-      else
-        format.html { render :edit }
-        format.json { render json: @order.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  def cancel_order
+  def cancel
     @order.status = :canceled
 
     if @order.save

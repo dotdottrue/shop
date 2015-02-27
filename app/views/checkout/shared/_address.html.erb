@@ -1,35 +1,10 @@
 <div id="left_box">
   <h3>Rechnungsadresse</h3>
-    <table class="table">
-      <% if @cart.invoice_company.present? %>
-        <tr>
-          <th width="30%">Firma: </th>
-          <td><%= @cart.invoice_company %></td>
-        </tr>
-      <% end %>
-      <tr>
-        <th width="30%">Vorname:</th>
-        <td><%= @cart.invoice_firstname %></td>
-      </tr>
-      <tr>
-        <th width="30%">Nachname:</th>
-        <td><%= @cart.invoice_lastname %></td>
-      </tr>
-      <tr>
-        <th width="30%">Strasse:</th>
-        <td><%= @cart.invoice_street %></td>
-      </tr>
-      <tr>
-        <th width="30%">Postleitzahl:</th>
-        <td><%= @cart.invoice_zipcode %></td>
-      </tr>
-      <tr>
-        <th width="30%">Ort:</th>
-        <td><%= @cart.invoice_site %></td>
-      </tr>
-      <tr>
-        <th width="30%">Land:</th>
-        <td><%= @cart.invoice_country %></td>
-      </tr>
-    </table>
+  <% if @cart.invoice_company.present? %>
+      <p><%= @cart.invoice_company %></p>
+  <% end %>
+  <p><%= "#{@cart.invoice_firstname} #{@cart.invoice_lastname}" %></p>
+  <p><%= @cart.invoice_street %></p>
+  <p><%= "#{@cart.invoice_zipcode}  #{@cart.invoice_site}" %></p>
+  <p><%= @cart.invoice_country %></p>
 </div>

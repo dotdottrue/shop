@@ -1,0 +1,28 @@
+<div class="row">
+  <div class=".col-xs-3">
+  	<h1><strong>Vielen Dank für Ihre Bestellung!</strong></h1>
+  	<br />
+  	<br />
+	  	<h4>Bestell-Nr. <strong><%= @order.order_number %></strong></h4>
+	  	<br />
+			<%= render partial: 'orders/shared/products' %>
+			<%= render partial: 'orders/shared/delivery_and_payment' %>
+	    <% if @order.optional_invoice_address %>
+				<%= render partial: 'orders/shared/address' %>
+			<% else %>
+				<%= render partial: 'orders/shared/address' %>
+			<div id="blank_div">
+      </div>
+	      <% if @order.shipping_zipcode and @order.shipping_site %>
+	        <%= render partial: 'orders/shared/shipping' %>
+	      <% end %>
+			<% end %> 
+			<%= render partial: 'orders/shared/account_data' %>
+			  <div id="full_box">
+				 <p> Ihre Bestellung können sie jederzeit unter <strong><%= link_to 'Bestellungen', orders_path %></strong> anschauen </p>
+
+			  <td><%= link_to 'Storno an Kasse 1', cancel_order_path(@order), class: 'btn btn-default btn-md'%></td>
+			</div>
+		</div>
+  </div>
+</div>

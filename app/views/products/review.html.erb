@@ -27,7 +27,9 @@
 
                 <div class="form-group">
                   <%= f.label :bewertung_schreiben %><br>
-                  <%= f.text_area :decription, class: 'form-control' %>
+                  <%= f.text_area :decription, :autofocus => true, class: 'form-control' %>
+                  <%= f.label :note %><br>
+                  <%= f.number_field :grade, class: 'form-control' %>
                   <%= f.hidden_field :username, :value => current_user.firstname %>
                   <%= f.hidden_field :product_id, :value => @product.id %>
                 </div>
@@ -47,8 +49,9 @@
         <% @reviews.each do |review| %>
             <div class = "well">
               <h4><%= review.username %></h4>
-
+              <p>Erstellt am <%= review.created_at %></p>
               <p><%= review.decription %></p>
+              <p><%= review.grade %></p>
             </div>
         <% end %>
       </div>

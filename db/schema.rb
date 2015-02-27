@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(version: 20150225170003) do
 
   create_table "carts", force: :cascade do |t|
-    t.datetime "created_at",                               null: false
-    t.datetime "updated_at",                               null: false
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
     t.integer  "shipping_method_id",       default: 1
     t.integer  "payment_id",               default: 1
     t.string   "invoice_firstname"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20150225170003) do
     t.string   "shipping_street"
     t.string   "shipping_country"
     t.string   "shipping_company"
-    t.boolean  "optional_invoice_address", default: false
+    t.boolean  "optional_invoice_address", default: true
   end
 
   create_table "categories", force: :cascade do |t|
@@ -126,10 +126,11 @@ ActiveRecord::Schema.define(version: 20150225170003) do
 
   create_table "reviews", force: :cascade do |t|
     t.string   "username"
-    t.text     "decription"
+    t.text     "description"
+    t.integer  "grade"
     t.integer  "product_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "shipping_methods", force: :cascade do |t|

@@ -1,5 +1,6 @@
 <div class="row">
   <div class=".col-xs-3">
+    <%= form_for(@cart, :url => orders_path, :method => :post) do |f| %>
     <%= render partial: 'checkout/shared/checkout_head' %>
       <% if @cart.optional_invoice_address %>
 
@@ -13,47 +14,23 @@
         <% if @cart.shipping_zipcode and @cart.shipping_site %>
           <div id="right_box">
             <h3>Lieferadresse</h3> 
-             <table class="table">
-              <% if @cart.shipping_company.present? %>
-                <tr>
-                  <th width="30%">Firma: </th>
-                  <td><%= @cart.shipping_company %></td>
-                </tr>
-              <% end %>
-              <tr>
-                <th width="30%">Vorname:</th>
-                <td><%= @cart.shipping_firstname %></td>
-              </tr>
-              <tr>
-                <th width="30%">Nachname:</th>
-                <td><%= @cart.shipping_lastname %></td>
-              </tr>
-              <tr>
-                <th width="30%">Strasse:</th>
-                <td><%= @cart.shipping_street %></td>
-              </tr>
-              <tr>
-                <th width="30%">Postleitzahl:</th>
-                <td><%= @cart.shipping_zipcode %></td>
-              </tr>
-              <tr>
-                <th width="30%">Ort:</th>
-                <td><%= @cart.shipping_site %></td>
-              </tr>
-              <tr>
-                <th width="30%">Land:</th>
-                <td><%= @cart.shipping_country %></td>
-              </tr>
-            </table>    
+            <% if @cart.shipping_company.present? %>
+                <p><%= @cart.shipping_company %></p>
+            <% end %>
+            <p><%= "#{@cart.shipping_firstname} #{@cart.shipping_lastname}" %></p>
+            <p><%= @cart.shipping_street %></p>
+            <p><%= "#{@cart.shipping_zipcode} #{@cart.shipping_site}" %></p>
+            <p><%= @cart.shipping_country %></p>
           </div>
       <% end %>
       <% end %> 
     <div id="full_box">   
       <% if (@cart.shipping_firstname.present? and @cart.shipping_lastname.present? and @cart.shipping_street? and @cart.shipping_zipcode and @cart.shipping_country) or ( @cart.invoice_site and @cart.invoice_zipcode and @cart.invoice_country and @cart.invoice_street) or (current_user.zipcode and current_user.street and current_user.country and current_user.site) %>    
-        <%= button_to 'Bestellung aufgeben', orders_path, class: 'btn btn-default btn-xs' %>
+        <%= f.submit 'Kostenpflichtig bestellen', class: 'btn btn-default btn-xs' %>
       <% else %>
       <p><strong> Sie müssen erst eine vollständige Adresse angeben um die Bestellung abschließen zu können!</strong></p>
-      <% end %> 
+      <% end %>
     </div>
+  <% end %>
   </div>
 </div>

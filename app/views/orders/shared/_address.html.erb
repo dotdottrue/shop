@@ -1,35 +1,10 @@
-		  <div id="left_box">
-			  <h4><strong>Rechnungsadresse</h4></strong>
-			    <table class="table">
-		      <% if @order.invoice_company.present? %>
-		        <tr>
-		          <th width="30%">Firma: </th>
-		          <td><%= @order.invoice_company %></td>
-		        </tr>
-		      <% end %>
-		      <tr>
-		        <th width="30%">Vorname:</th>
-		        <td><%= @order.invoice_firstname %></td>
-		      </tr>
-		      <tr>
-		        <th width="30%">Nachname:</th>
-		        <td><%= @order.invoice_lastname %></td>
-		      </tr>
-		      <tr>
-		        <th width="30%">Strasse:</th>
-		        <td><%= @order.invoice_street %></td>
-		      </tr>
-		      <tr>
-		        <th width="30%">Postleitzahl:</th>
-		        <td><%= @order.invoice_zipcode %></td>
-		      </tr>
-		      <tr>
-		        <th width="30%">Ort:</th>
-		        <td><%= @order.invoice_site %></td>
-		      </tr>
-		      <tr>
-		        <th width="30%">Land:</th>
-		        <td><%= @order.invoice_country %></td>
-		      </tr>
-			  </table>
-			</div>
+<div id="left_box">
+  <h4><strong>Rechnungsadresse</h4></strong>
+  <% if @order.invoice_company.present? %>
+      <p><%= @order.invoice_company %></p>
+  <% end %>
+  <p><%= "#{@order.invoice_firstname} #{@order.invoice_lastname}" %></p>
+  <p><%= @order.invoice_street %></p>
+  <p><%= "#{@order.invoice_zipcode} #{@order.invoice_site}" %></p>
+  <p><%= @order.invoice_country %></p>
+</div>
