@@ -1,72 +1,23 @@
 <div class="row">
   <div class=".col-xs-3">
     <%= form_for(@cart, :url => checkout_overview_path, :method => :post) do |f| %>
-      <h1>Bestellübersicht</h1>
-      <% if @cart.line_items.present? %>
-        <div id="left_table_box">
-          <table class="table">
-            <thead>
-              <tr>
-                <th width="52%">Produkt</th>
-                <th width="30%">Menge</th>
-                <th class="text-right">Preis</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <% @cart.line_items.each do |line_item| %>
-                <tr>
-                  <td><%= line_item.product.name %></td>
-                  <td><%= line_item.quantity %></td>
-                  <td class="text-right"><%= number_to_currency(line_item.total_price) %></td>
-                  <td></td>
-
-                </tr>
-              <% end %>
-            </table>
-            <table class="table">
-              <tr>
-                <td width="52%"></td>
-                <td width="30%">Versandkosten</td>
-                <td class="text-right"><%= number_to_currency(@cart.shipping_method.price) %></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Enthaltene MwSt</td>
-                <td class="text-right"><%= number_to_currency(@cart.total_vat) %></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Gesamt</td>
-                <td class="text-right"><strong><%= number_to_currency(@cart.total_price) %></strong></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
+      <h1>Adresseingabe</h1>
+      <%= render partial: 'checkout/shared/checkout_head' %>
         </div>
-        <div id="full_box">
-          <h4>Versand- und Bezahlart</h4>
-          <p>Die Versandart ist <strong><%= @cart.shipping_method.name %></strong>.</p>
-          <p>Und die Bezahlart ist <strong><%= @cart.payment.name %></strong>.</p> 
-          <% end %>
-        </div>
-      <div id="left_box"> 
+      <div class="left_box"> 
         <h3>Rechnungsadresse</h3>
       </div>
-      <div id="blank_div">
+      <div class="blank_div">
       </div>
-        <div id="right_box">
+        <div class="right_box">
           <h3>Lieferadresse</h3>
         </div>
-      <div id="full_box">
+      <div class="full_box">
         <div class="field">
-          <%= f.label "Auswahl der Rechnungsadresse" %> <br />
           <%= f.check_box :optional_invoice_address %> Lieferadresse und Rechnungsadresse sind identisch <br />
         </div>
       </div> 
-      <div id="left_box">   
+      <div class="left_box">   
         <table class="table">
           <tr>
             <th><%= f.label :company %></th>
@@ -98,7 +49,7 @@
           </tr>
       </table>      
     </div>
-    <div id="right_box">
+    <div class="right_box">
       <table class="table">
         <tr>
           <th><%= f.label :company %></th>
@@ -130,7 +81,7 @@
         </tr>
       </table>      
     </div> 
-    <div id="full_box">    
+    <div class="full_box">    
       <%= f.submit 'Weiter', class: 'btn btn-default btn-xs' %>
     </div>
   <% end %>

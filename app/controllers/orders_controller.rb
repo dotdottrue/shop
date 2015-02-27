@@ -74,8 +74,20 @@ class OrdersController < ApplicationController
   def destroy
     @order.destroy
     respond_to do |format|
-      format.html { redirect_to orders_url, notice: 'Bestellung wurde erfolgreich gelöscht.' }
+      #format.html { redirect_to orders_url, notice: 'Bestellung wurde erfolgreich gelöscht.' }
       format.json { head :no_content }
+    end
+  end
+
+  def update
+    respond_to do |format|
+      if @order.update(order_params)
+        format.html { redirect_to edit_order_path(@order), notice: 'Bestellung wurde erfolgreich geändert.' }
+        format.json { render :show, status: :ok, location: @order }
+      else
+        format.html { render :edit }
+        format.json { render json: @order.errors, status: :unprocessable_entity }
+      end
     end
   end
 
@@ -87,6 +99,6 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:order_number, :user_id, :shipping_method_id, :payment_id, :total_price, :order_date)
+      params.require(:order).permit(:order_number, :status, :user_id, :shipping_method_id, :payment_id, :total_price, :order_date)
     end
 end

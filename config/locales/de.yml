@@ -33,7 +33,7 @@ de:
     formats:
       default: ! '%d.%m.%Y'
       long: ! '%e. %B %Y'
-      short: ! '%e. %b'
+      short: ! '%d.%m.%Y'
     month_names:
     -
     - Januar
@@ -240,8 +240,10 @@ de:
         grade: 'Note'
       order:
         order_number: 'Bestellnummer'
+        total_price: 'Gesamtpreis'
         order_date: 'Bestelldatum'
-        status:
+        status: 'Status'
+        status_values:
           canceled: 'Storniert'
           process: 'In Bearbeitung'
           payment: 'Bezahlt'

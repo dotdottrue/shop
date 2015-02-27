@@ -11,14 +11,14 @@
 				<%= render partial: 'orders/shared/address' %>
 			<% else %>
 				<%= render partial: 'orders/shared/address' %>
-			<div id="blank_div">
+			<div class="blank_div">
       </div>
 	      <% if @order.shipping_zipcode and @order.shipping_site %>
 	        <%= render partial: 'orders/shared/shipping' %>
 	      <% end %>
 			<% end %> 
 			<%= render partial: 'orders/shared/account_data' %>
-			  <div id="full_box">
+			  <div class="full_box">
 				 <p> Ihre Bestellung können sie jederzeit unter <strong><%= link_to 'Bestellungen', orders_path %></strong> anschauen </p>
 
 			  <td><%= link_to 'Bestellung stornieren', cancel_order_path(@order), class: 'btn btn-default btn-md'%></td>

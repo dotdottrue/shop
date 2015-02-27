@@ -1,5 +1,5 @@
 <h4><strong>Produktauflistung</strong></h4>
-<div id="left_table_box">
+<div class="left_table_box">
   <table class="table">
   <thead>
 	   <tr>
@@ -31,9 +31,9 @@
 		  <tr>
 		  	<th>Der zu Zahlende Betrag ist:</th>
 		  	<td></td>
-		  	<td class="text-right"><strong><%= number_to_currency(@order.total_price) %></strong></td>
+		  	<td class="text-right"><strong><%= number_to_currency(@order.total_price + @order.shipping_method_price) %></strong></td>
 		  </tr>	
 		</tbody> 
 	</table>
 </div>
-<div id="full_box">
+<div class="full_box">

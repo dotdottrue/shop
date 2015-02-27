@@ -40,31 +40,31 @@ html, body{
     bottom: 0;
 }
 
-#left_table_box {
+.left_table_box {
     width: 65%;
     float: left;
     background-color: #FFF;
 }
 
-#left_box {
+.left_box {
     width: 45%;
     float: left;
     background-color: #FFF;
 }
 
-#blank_div {
+.blank_div {
     width: 10%;
     float: left;
     background-color: #FFF;
 }
 
-#right_box {
+.right_box {
     width: 45%;
     float: right;
     background-color: #FFF;
 }
 
-#full_box {
+.full_box {
     width: 100%;
     float: left;
     background-color: #FFF;

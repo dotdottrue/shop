@@ -1,3 +1,11 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$ ->
+  toggle_shipping_address = (checkbox) ->
+    if !checkbox.is(':checked')
+      $('.right_box').fadeIn()
+    else
+      $('.right_box').hide()
+
+  $("input[name='cart[optional_invoice_address]']").on 'change', ->
+    toggle_shipping_address $(this)
+
+  toggle_shipping_address $("input[name='cart[optional_invoice_address]']")

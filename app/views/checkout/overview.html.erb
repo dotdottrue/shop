@@ -1,6 +1,7 @@
 <div class="row">
   <div class=".col-xs-3">
     <%= form_for(@cart, :url => orders_path, :method => :post) do |f| %>
+    <h1>Bestellübersicht</h1>
     <%= render partial: 'checkout/shared/checkout_head' %>
       <% if @cart.optional_invoice_address %>
 
@@ -9,10 +10,10 @@
 
         <%= render partial: 'checkout/shared/address' %>
 
-        <div id="blank_div">
+        <div class="blank_div">
         </div>
         <% if @cart.shipping_zipcode and @cart.shipping_site %>
-          <div id="right_box">
+          <div class="right_box">
             <h3>Lieferadresse</h3> 
             <% if @cart.shipping_company.present? %>
                 <p><%= @cart.shipping_company %></p>
@@ -24,7 +25,7 @@
           </div>
       <% end %>
       <% end %> 
-    <div id="full_box">   
+    <div class="full_box">   
       <% if (@cart.shipping_firstname.present? and @cart.shipping_lastname.present? and @cart.shipping_street? and @cart.shipping_zipcode and @cart.shipping_country) or ( @cart.invoice_site and @cart.invoice_zipcode and @cart.invoice_country and @cart.invoice_street) or (current_user.zipcode and current_user.street and current_user.country and current_user.site) %>    
         <%= f.submit 'Kostenpflichtig bestellen', class: 'btn btn-default btn-xs' %>
       <% else %>

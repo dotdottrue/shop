@@ -24,8 +24,8 @@
           <td><%= order.user_id %></td>
         <% end %>
         <td><%= number_to_currency(order.total_price) %></td>
-        <td><%= order.order_date %></td>
-        <td><%= I18n.t('activerecord.attributes.order.status.'+ order.status) %></td>
+        <td><%= I18n.l order.order_date %></td>
+        <td><%= I18n.t('activerecord.attributes.order.status_values.'+ order.status) %></td>
         <td><%= link_to order do%>
         <i class="fa fa-eye">Anzeigen</i>
         <% end %>
