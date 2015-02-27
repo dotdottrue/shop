@@ -66,6 +66,26 @@ Viel Spaß beim verwenden/durchklicken des Webshops!
 Eine Ausführliche Dokumentation und die User Stories finden Sie in der Wiki<br>
 [Zum Wiki!](https://github.com/dotdottrue/shop/wiki)
 
+Um auf Heroku zu Deployen und das seeden der Daten zu generieren muss folgendes angepasst werden.
+Im Product Model müssen folgende Daten angepasst werden:
+
+```
+has_attached_file :avatar, :styles => { :large =>'400x400', :medium => '350x250', :small => '200x200', :mini => '100x100' }, :default_url => '/images/:style/missing.png',
+                    :storage => :dropbox,
+                    :dropbox_credentials => Rails.root.join('config/dropbox.yml'),
+                    :path => ':style/:id_:filename'
+ ```
+ 
+ In der config/dropbox.yml müssen folgende Daten configuriert werden:
+ ```
+ app_key: "Bitte hier den eigenen Dropbox-Key eintragen"
+app_secret: "Bitte hier den eigenen App-secret code eintragen"
+access_token: "Bitte hier den eigenen Access_token eintragen"
+access_token_secret: "Bitte hier den eigenen access_token_secret code eintragen"
+user_id: "Die eigene User_id eintragen"
+access_type: "app_folder"
+```
+
 <h3>Gemliste</h3>
 
 <p>In dem Webshop wurden folgende Gems verwendet:</p>
