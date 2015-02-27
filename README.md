@@ -61,12 +61,14 @@ Um den Webshop auch live zu sehen können sie unter folgendem Link eine Deployte
 
 Viel Spaß beim verwenden/durchklicken des Webshops!
 
-<h3>Dokumentation und User Stories</h3>
+Anmerkung zum Heroku-Deployment:
+Um voreingestellte Seeds zu verwenden wird der Gem
 
-Eine Ausführliche Dokumentation und die User Stories finden Sie in der Wiki<br>
-[Zum Wiki!](https://github.com/dotdottrue/shop/wiki)
+```
+gem 'paperclip-dropbox'
+```
+empfohlen. Für diesen müssen folgende Konfiguration durchgeführt werden damit ein Reibungsloser Ablauf garantiert wird. 
 
-Um auf Heroku zu Deployen und das seeden der Daten zu generieren muss folgendes angepasst werden.
 Im Product Model müssen folgende Daten angepasst werden:
 
 ```
@@ -85,6 +87,11 @@ access_token_secret: "Bitte hier den eigenen access_token_secret code eintragen"
 user_id: "Die eigene User_id eintragen"
 access_type: "app_folder"
 ```
+
+<h3>Dokumentation und User Stories</h3>
+
+Eine Ausführliche Dokumentation und die User Stories finden Sie in der Wiki<br>
+[Zum Wiki!](https://github.com/dotdottrue/shop/wiki)
 
 <h3>Gemliste</h3>
 
