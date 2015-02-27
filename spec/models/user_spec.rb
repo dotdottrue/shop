@@ -6,7 +6,7 @@ require 'rails_helper'
 
 describe User do
 
-	# setup
+  # setup
     user = FactoryGirl.build(:user)
 
   it 'returns the concatenated first and last name' do
