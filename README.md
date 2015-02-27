@@ -44,7 +44,7 @@ Es wird ein Adminbenutzer bei den Seeds mit angelegt. Dieser kann Produkte anleg
 
 Mail:
 ```admin@dotdottrue.com```<br />
-Passwort:<br />
+Passwort: 
 ```admin678```<br />
 
 Ein Standardbenutzer wird nicht mit angelegt, da dieser eigenständig Angelegt werden kann und die Funktionen mit diesem durchlaufen werden können.
