@@ -235,6 +235,9 @@ de:
         password: 'Passwort'
         password_confirmation: 'Passwort wiederholen'
         phone: 'Telefonnummer'
+      review:
+        description: 'Bewertung schreiben'
+        grade: 'Note'
       order:
         order_number: 'Bestellnummer'
         order_date: 'Bestelldatum'

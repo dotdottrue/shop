@@ -3,6 +3,7 @@ class CreateReviews < ActiveRecord::Migration
     create_table :reviews do |t|
       t.string :username
       t.text :description
+      t.integer :grade
       t.integer :product_id
 
       t.timestamps null: false

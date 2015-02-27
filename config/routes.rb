@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :orders do
     member do
       get 'cancel', as: 'cancel'
+      post 'cancel', as: 'canceled'
     end
   end
 
