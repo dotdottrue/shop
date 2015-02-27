@@ -57,9 +57,14 @@ Für die spätere Zahlungs- bzw. Rechnungsprüfung wird eine nachgelagerte Backe
 <h3>Heroku</h3>
 
 Um den Webshop auch live zu sehen können sie unter folgendem Link eine Deployte Version des Webshops finden.
-[KLICK MICH!](https://cryptic-beach-5711.herokuapp.com)
+[KLICK MICH!](https://fast-brushlands-8904.herokuapp.com/)
 
 Viel Spaß beim verwenden/durchklicken des Webshops!
+
+<h3>Dokumentation und User Stories</h3>
+
+Eine Ausführliche Dokumentation und die User Stories finden Sie in der Wiki<br>
+[Zum Wiki!](https://github.com/dotdottrue/shop/wiki)
 
 <h3>Gemliste</h3>
 

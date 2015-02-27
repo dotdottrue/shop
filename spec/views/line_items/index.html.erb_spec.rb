@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "line_items/index", :type => :view do
+describe "line_items/index"do
   before(:each) do
     assign(:line_items, [
       LineItem.create!(
