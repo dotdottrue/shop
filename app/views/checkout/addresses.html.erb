@@ -57,15 +57,13 @@
       </div>
       <div id="blank_div">
       </div>
-      <% if !current_cart.optional_invoice_address %>
         <div id="right_box">
           <h3>Lieferadresse</h3>
         </div>
-      <% end %> 
       <div id="full_box">
         <div class="field">
           <%= f.label "Auswahl der Rechnungsadresse" %> <br />
-          <%= f.check_box :optional_invoice_address, :onchange => "function();" %> Lieferadresse und Rechnungsadresse sind identisch <br />
+          <%= f.check_box :optional_invoice_address %> Lieferadresse und Rechnungsadresse sind identisch <br />
         </div>
       </div> 
       <div id="left_box">   
@@ -100,40 +98,38 @@
           </tr>
       </table>      
     </div>
-    <% if !current_cart.optional_invoice_address %>
-      <div id="right_box">
-        <table class="table">
-          <tr>
-            <th><%= f.label :company %></th>
-            <td><%= f.text_field :shipping_company %></td>
-          </tr>
-          <tr>
-            <th><%= f.label :firstname %></th>
-            <td><%= f.text_field :shipping_firstname %></td>
-          </tr>
-          <tr>
-            <th><%= f.label :lastname %></th>
-            <td><%= f.text_field :shipping_lastname %></td>
-          </tr>         
-          <tr>
-            <th><%= f.label :street %></th>
-            <td><%= f.text_field :shipping_street %></td>
-          </tr>
-          <tr>
-            <th><%= f.label :zipcode %></th>
-            <td><%= f.text_field :shipping_zipcode %></td>
-          </tr>
-          <tr>
-            <th><%= f.label :site %></th>
-            <td><%= f.text_field :shipping_site %></td>
-          </tr>
-          <tr>
-            <th><%= f.label :country %></th>
-            <td><%= f.text_field :shipping_country %></td>
-          </tr>
-        </table>      
-      </div> 
-    <% end %>
+    <div id="right_box">
+      <table class="table">
+        <tr>
+          <th><%= f.label :company %></th>
+          <td><%= f.text_field :shipping_company %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :firstname %></th>
+          <td><%= f.text_field :shipping_firstname %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :lastname %></th>
+          <td><%= f.text_field :shipping_lastname %></td>
+        </tr>         
+        <tr>
+          <th><%= f.label :street %></th>
+          <td><%= f.text_field :shipping_street %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :zipcode %></th>
+          <td><%= f.text_field :shipping_zipcode %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :site %></th>
+          <td><%= f.text_field :shipping_site %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :country %></th>
+          <td><%= f.text_field :shipping_country %></td>
+        </tr>
+      </table>      
+    </div> 
     <div id="full_box">    
       <%= f.submit 'Weiter', class: 'btn btn-default btn-xs' %>
     </div>
