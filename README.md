@@ -1,7 +1,7 @@
 <h1>Webentwicklung II Projekt</h1>
 Das Projekt wurde in ```Ruby 2.2.0``` und ```Rails 4.2.0```entwickelt.
 
-Das Projekt beinhaltet einen funktionstüchtigen Webshop in welchem man sich als Benutzer registrieren kann und auch Einkäufe tätigen kann.
+Das Projekt beinhaltet einen funktionstüchtigen Webshop, in welchem man sich als Benutzer registrieren kann und auch Einkäufe tätigen kann.
 
 <h3>Starten der Applikation</h3>
 
