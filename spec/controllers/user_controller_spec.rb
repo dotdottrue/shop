@@ -22,9 +22,4 @@ describe 'POST #create' do
       expect(flash[:notice]).to match(/^Email and password do not match/)
     end
   end
-
-
-
-
 end
-
