@@ -3,7 +3,7 @@ class CreateOrders < ActiveRecord::Migration
     create_table :orders do |t|
       t.integer :order_number
       t.integer :user_id
-      t.decimal :total_vat
+      t.decimal :total_vat, precision: 8, scale: 2
       t.decimal :total_price, precision: 8, scale: 2 
       t.datetime :order_date
 

@@ -5,8 +5,8 @@ class CreateOrderLineItems < ActiveRecord::Migration
       t.string :product_name
       t.text :product_short_description
       t.text :product_description
-      t.decimal :product_price
-      t.decimal :product_vat_rate
+      t.decimal :product_price, precision: 8, scale: 2
+      t.decimal :product_vat_rate, precision: 8, scale: 2
       t.integer :product_quantity
 
       t.timestamps null: false
