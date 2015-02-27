@@ -23,7 +23,7 @@
         <% if current_user.admin %>
           <td><%= order.user_id %></td>
         <% end %>
-        <td><%= number_to_currency(order.total_price) %></td>
+        <td><%= number_to_currency(order.total_price + order.shipping_method_price) %></td>
         <td><%= I18n.l order.order_date %></td>
         <td><%= I18n.t('activerecord.attributes.order.status_values.'+ order.status) %></td>
         <td><%= link_to order do%>
