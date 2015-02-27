@@ -12,6 +12,7 @@ Folgender Befehl ist dafür notwendig:<br /><br />
 Der nächste Schritt ist das ausführen des Bundlers um die Gems zu installieren:<br /><br />
 ```bundle install```
 <br />
+
 Um eine reibungslose Verwendung von <b>Paperclip</b> sowie <b>PG(PostgreSQL)</b> zu gewährleisten wird empfohlen bzw.<br /> sollte noch folgendes per Commandline installiert werden.<br />
 Für <b>Paperclip</b> sollten folgende Befehle ausgeführt werden:<br />
 <b>Mac: </b><br />
@@ -63,9 +64,8 @@ Viel Spaß beim verwenden/durchklicken des Webshops!
 
 Anmerkung zum Heroku-Deployment:
 Um voreingestellte Seeds zu verwenden wird der Gem
-
 ```
-gem 'paperclip-dropbox'
+gem 'paperclip-dropbox', '>= 1.1.7'
 ```
 empfohlen. Für diesen müssen folgende Konfiguration durchgeführt werden damit ein Reibungsloser Ablauf garantiert wird. 
 
