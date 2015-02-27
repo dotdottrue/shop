@@ -63,7 +63,7 @@ Viel Spaß beim verwenden/durchklicken des Webshops!
 
 <h3>Dokumentation und User Stories</h3>
 
-Eine Ausführliche Dokumentation und die User Stories finden Sie in der Wiki
+Eine Ausführliche Dokumentation und die User Stories finden Sie in der Wiki<br>
 [Zum Wiki!](https://github.com/dotdottrue/shop/wiki)
 
 <h3>Gemliste</h3>
