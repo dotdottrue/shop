@@ -57,7 +57,7 @@ Für die spätere Zahlungs- bzw. Rechnungsprüfung wird eine nachgelagerte Backe
 <h3>Heroku</h3>
 
 Um den Webshop auch live zu sehen können sie unter folgendem Link eine Deployte Version des Webshops finden.
-[KLICK MICH!](https://fast-brushlands-8904.herokuapp.com/)
+[KLICK MICH!](https://secure-depths-1523.herokuapp.com/)
 
 Viel Spaß beim verwenden/durchklicken des Webshops!
 
