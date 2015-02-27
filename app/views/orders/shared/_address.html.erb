@@ -1,7 +1,7 @@
 		  <div id="left_box">
 			  <h4><strong>Rechnungsadresse</h4></strong>
 			    <table class="table">
-		      <% if @order.invoice_company %>
+		      <% if @order.invoice_company.present? %>
 		        <tr>
 		          <th width="30%">Firma: </th>
 		          <td><%= @order.invoice_company %></td>

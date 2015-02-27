@@ -55,17 +55,17 @@ ActiveRecord::Schema.define(version: 20150225170003) do
     t.string   "product_name"
     t.text     "product_short_description"
     t.text     "product_description"
-    t.decimal  "product_price"
-    t.decimal  "product_vat_rate"
+    t.decimal  "product_price",             precision: 8, scale: 2
+    t.decimal  "product_vat_rate",          precision: 8, scale: 2
     t.integer  "product_quantity"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at",                                        null: false
+    t.datetime "updated_at",                                        null: false
   end
 
   create_table "orders", force: :cascade do |t|
     t.integer  "order_number"
     t.integer  "user_id"
-    t.decimal  "total_vat"
+    t.decimal  "total_vat",                precision: 8, scale: 2
     t.decimal  "total_price",              precision: 8, scale: 2
     t.datetime "order_date"
     t.datetime "created_at",                                                   null: false
@@ -135,10 +135,10 @@ ActiveRecord::Schema.define(version: 20150225170003) do
   create_table "shipping_methods", force: :cascade do |t|
     t.string   "name"
     t.string   "duration"
-    t.decimal  "price"
-    t.decimal  "vat_rate"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.decimal  "price",      precision: 8, scale: 2
+    t.decimal  "vat_rate",   precision: 8, scale: 2
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
   end
 
   create_table "users", force: :cascade do |t|

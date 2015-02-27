@@ -37,7 +37,7 @@ class OrdersController < ApplicationController
       @order.shipping_site = current_cart.shipping_site
       @order.shipping_country = current_cart.shipping_country
     end
-      @order.invoice_company = 
+      @order.invoice_company = current_cart.invoice_company
       @order.invoice_firstname = current_cart.invoice_firstname
       @order.invoice_lastname = current_cart.invoice_lastname
       @order.invoice_street = current_cart.invoice_street

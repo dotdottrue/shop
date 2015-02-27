@@ -60,7 +60,7 @@
 		        <div id="right_box">
 		          <h4><strong>Lieferadresse</h4></strong>
 		           <table class="table">
-		            <% if @order.shipping_company %>
+		            <% if @order.shipping_company.present? %>
 		              <tr>
 		                <th width="30%">Firma: </th>
 		                <td><%= @order.shipping_company %></td>

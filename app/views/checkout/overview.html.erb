@@ -14,7 +14,7 @@
           <div id="right_box">
             <h3>Lieferadresse</h3> 
              <table class="table">
-              <% if @cart.shipping_company %>
+              <% if @cart.shipping_company.present? %>
                 <tr>
                   <th width="30%">Firma: </th>
                   <td><%= @cart.shipping_company %></td>
