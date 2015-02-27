@@ -1,4 +1,4 @@
 class Review < ActiveRecord::Base
   belongs_to :product
-  validates :decription, presence: true
+  validates :description, presence: true
 end
